@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="timeline-title timeline-desc">
+  <title id="timeline-title">Project Development Timeline</title>
+  <desc id="timeline-desc">Historical timeline showing key milestones in project development from ideation to launch</desc>
+  
+  <defs>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#0f172a">
+    Project Timeline
+  </text>
+  
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#cbd5e1" stroke-width="4">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+  </line>
+  
+  <line x1="100" y1="200" x2="100" y2="200" stroke="url(#timelineGrad)" stroke-width="4">
+    <animate attributeName="x2" values="100;700" begin="0.5s" dur="3s" fill="freeze"/>
+  </line>
+  
+  <g>
+    <circle cx="100" cy="200" r="15" fill="#06b6d4" stroke="white" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="100" y="170" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#0e7490">
+      <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze"/>
+      Ideation
+    </text>
+    <text x="100" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">
+      <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze"/>
+      Initial concept
+    </text>
+  </g>
+  
+  <g>
+    <circle cx="250" cy="200" r="15" fill="#3b82f6" stroke="white" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="250" y="170" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#1e40af">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+      Planning
+    </text>
+    <text x="250" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+      Architecture
+    </text>
+  </g>
+  
+  <g>
+    <circle cx="400" cy="200" r="15" fill="#8b5cf6" stroke="white" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="2s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#6b21a8">
+      <animate attributeName="opacity" values="0;1" begin="2s" dur="0.5s" fill="freeze"/>
+      Development
+    </text>
+    <text x="400" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">
+      <animate attributeName="opacity" values="0;1" begin="2s" dur="0.5s" fill="freeze"/>
+      Core features
+    </text>
+  </g>
+  
+  <g>
+    <circle cx="550" cy="200" r="15" fill="#d946ef" stroke="white" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="550" y="170" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#a21caf">
+      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+      Testing
+    </text>
+    <text x="550" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">
+      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+      QA phase
+    </text>
+  </g>
+  
+  <g>
+    <circle cx="700" cy="200" r="18" fill="#ec4899" stroke="white" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="700" y="165" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#be185d">
+      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
+      Launch
+    </text>
+    <text x="700" y="240" text-anchor="middle" font-family="Arial" font-size="11" fill="#475569">
+      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
+      Public release
+    </text>
+  </g>
+</svg>
