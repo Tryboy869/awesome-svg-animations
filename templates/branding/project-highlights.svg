@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="highlights-title highlights-desc">
+  <title id="highlights-title">Featured Projects</title>
+  <desc id="highlights-desc">Showcase of key projects with technologies used</desc>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <rect width="600" height="400" fill="#f1f5f9"/>
+  
+  <text x="300" y="35" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#0f172a">
+    Featured Projects
+  </text>
+  
+  <g>
+    <rect x="50" y="70" width="160" height="120" rx="8" fill="white" stroke="#3b82f6" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="60" y="80" width="140" height="60" rx="4" fill="#dbeafe"/>
+    <text x="130" y="115" text-anchor="middle" font-family="Arial" font-size="24">📱</text>
+    <text x="130" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.5s" fill="freeze"/>
+      Mobile App
+    </text>
+    <text x="130" y="178" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.5s" fill="freeze"/>
+      React Native
+    </text>
+  </g>
+  
+  <g>
+    <rect x="220" y="70" width="160" height="120" rx="8" fill="white" stroke="#10b981" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="230" y="80" width="140" height="60" rx="4" fill="#d1fae5"/>
+    <text x="300" y="115" text-anchor="middle" font-family="Arial" font-size="24">🌐</text>
+    <text x="300" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.5s" fill="freeze"/>
+      Web Platform
+    </text>
+    <text x="300" y="178" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.5s" fill="freeze"/>
+      Next.js + TS
+    </text>
+  </g>
+  
+  <g>
+    <rect x="390" y="70" width="160" height="120" rx="8" fill="white" stroke="#f59e0b" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="400" y="80" width="140" height="60" rx="4" fill="#fef3c7"/>
+    <text x="470" y="115" text-anchor="middle" font-family="Arial" font-size="24">🤖</text>
+    <text x="470" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="0.9s" dur="0.5s" fill="freeze"/>
+      AI Tool
+    </text>
+    <text x="470" y="178" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="0.9s" dur="0.5s" fill="freeze"/>
+      Python + ML
+    </text>
+  </g>
+  
+  <g>
+    <rect x="50" y="220" width="160" height="120" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="0.9s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="60" y="230" width="140" height="60" rx="4" fill="#ede9fe"/>
+    <text x="130" y="265" text-anchor="middle" font-family="Arial" font-size="24">⚡</text>
+    <text x="130" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze"/>
+      API Service
+    </text>
+    <text x="130" y="328" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze"/>
+      Node.js
+    </text>
+  </g>
+  
+  <g>
+    <rect x="220" y="220" width="160" height="120" rx="8" fill="white" stroke="#ec4899" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="230" y="230" width="140" height="60" rx="4" fill="#fce7f3"/>
+    <text x="300" y="265" text-anchor="middle" font-family="Arial" font-size="24">📊</text>
+    <text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+      Dashboard
+    </text>
+    <text x="300" y="328" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+      Vue.js
+    </text>
+  </g>
+  
+  <g>
+    <rect x="390" y="220" width="160" height="120" rx="8" fill="white" stroke="#06b6d4" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="400" y="230" width="140" height="60" rx="4" fill="#cffafe"/>
+    <text x="470" y="265" text-anchor="middle" font-family="Arial" font-size="24">🔧</text>
+    <text x="470" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
+      <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze"/>
+      CLI Tool
+    </text>
+    <text x="470" y="328" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze"/>
+      Rust
+    </text>
+  </g>
+</svg>
