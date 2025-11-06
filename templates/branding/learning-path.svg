@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="learning-title learning-desc">
+  <title id="learning-title">My Learning Journey</title>
+  <desc id="learning-desc">Educational path from beginner to advanced</desc>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <rect width="600" height="450" fill="#fef3c7"/>
+  
+  <text x="300" y="35" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#78350f">
+    Learning Journey
+  </text>
+  
+  <g>
+    <circle cx="300" cy="100" r="50" fill="#fbbf24" stroke="#78350f" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="300" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#78350f">
+      Beginner
+    </text>
+    <text x="300" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#92400e">
+      <animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.5s" fill="freeze"/>
+      HTML, CSS, JavaScript
+    </text>
+  </g>
+  
+  <g>
+    <line x1="300" y1="150" x2="300" y2="190" stroke="#f59e0b" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.3s" fill="freeze"/>
+    </line>
+    <polygon points="295,190 300,200 305,190" fill="#f59e0b">
+      <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.3s" fill="freeze"/>
+    </polygon>
+  </g>
+  
+  <g>
+    <circle cx="300" cy="240" r="50" fill="#f59e0b" stroke="#78350f" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="300" y="248" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="white">
+      Intermediate
+    </text>
+    <text x="300" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#92400e">
+      <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.5s" fill="freeze"/>
+      React, Node.js, SQL
+    </text>
+  </g>
+  
+  <g>
+    <line x1="300" y1="290" x2="300" y2="330" stroke="#ea580c" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.3s" fill="freeze"/>
+    </line>
+    <polygon points="295,330 300,340 305,330" fill="#ea580c">
+      <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.3s" fill="freeze"/>
+    </polygon>
+  </g>
+  
+  <g>
+    <circle cx="150" cy="385" r="50" fill="#ea580c" stroke="#78350f" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="2s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="150" y="395" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
+      Advanced
+    </text>
+  </g>
+  
+  <g>
+    <line x1="300" y1="340" x2="200" y2="360" stroke="#ea580c" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="2.3s" dur="0.3s" fill="freeze"/>
+    </line>
+  </g>
+  
+  <g>
+    <rect x="320" y="330" width="240" height="110" rx="8" fill="white" stroke="#78350f" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="440" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#78350f">
+      Skills Gained:
+    </text>
+    <text x="440" y="375" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="2.8s" dur="0.5s" fill="freeze"/>
+      ✓ Web Development
+    </text>
+    <text x="440" y="393" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
+      ✓ Backend APIs
+    </text>
+    <text x="440" y="411" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="3.2s" dur="0.5s" fill="freeze"/>
+      ✓ Database Design
+    </text>
+    <text x="440" y="429" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">
+      <animate attributeName="opacity" values="0;1" begin="3.4s" dur="0.5s" fill="freeze"/>
+      ✓ DevOps Basics
+    </text>
+  </g>
+</svg>
