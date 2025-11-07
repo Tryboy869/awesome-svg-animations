@@ -1,20 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" role="img" aria-labelledby="deployment-title deployment-desc">
   <title id="deployment-title">Deployment Pipeline</title>
-  <desc id="deployment-desc">Animated visualization of CI/CD deployment workflow from code commit to production</desc>
+  <desc id="deployment-desc">Animated visualization of CI/CD deployment workflow</desc>
   
   <defs>
     <linearGradient id="pipelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
-      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1"/>
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="50%" style="stop-color:#764ba2"/>
+      <stop offset="100%" style="stop-color:#f093fb"/>
     </linearGradient>
     
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
     </filter>
   </defs>
   
@@ -26,79 +30,154 @@
   
   <rect width="800" height="200" fill="#f7fafc"/>
   
-  <line x1="80" y1="100" x2="720" y2="100" stroke="#e2e8f0" stroke-width="3" stroke-dasharray="5,5"/>
+  <!-- Animated background waves -->
+  <path d="M0,100 Q200,80 400,100 T800,100 L800,200 L0,200 Z" fill="#667eea" opacity="0.05">
+    <animate attributeName="d" 
+             values="M0,100 Q200,80 400,100 T800,100 L800,200 L0,200 Z;
+                     M0,100 Q200,120 400,100 T800,100 L800,200 L0,200 Z;
+                     M0,100 Q200,80 400,100 T800,100 L800,200 L0,200 Z"
+             dur="8s"
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Pipeline connecting line with animated dash -->
+  <line x1="80" y1="100" x2="720" y2="100" stroke="#e2e8f0" stroke-width="4" stroke-dasharray="10,5">
+    <animate attributeName="stroke-dashoffset" values="15;0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Progress indicator traveling along pipeline -->
+  <circle cx="80" cy="100" r="6" fill="#667eea" filter="url(#glow)">
+    <animate attributeName="cx" values="80;720;80" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.1;0.8;0.9;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
   
   <!-- Stage 1: Commit -->
   <g>
-    <circle cx="100" cy="100" r="30" fill="#667eea" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0s;stage4end.end+5s" fill="freeze"/>
+    <circle cx="100" cy="100" r="30" fill="#667eea" filter="url(#shadow)">
+      <animate attributeName="r" values="30;34;30" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#667eea" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="30;45;30" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite"/>
     </circle>
     <path d="M95,95 L95,105 L105,105 L105,95 Z M97,97 L97,103 L103,103 L103,97 Z" fill="white"/>
     <text x="100" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#667eea">Commit</text>
   </g>
   
-  <!-- Arrow 1 -->
+  <!-- Arrow 1 with pulse -->
   <g>
-    <line x1="130" y1="100" x2="230" y2="100" stroke="#667eea" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="0.5s;stage4end.end+5.5s" dur="1s" fill="freeze"/>
+    <line x1="130" y1="100" x2="230" y2="100" stroke="url(#pipelineGradient)" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
     </line>
     <polygon points="230,95 240,100 230,105" fill="#667eea">
-      <animate attributeName="opacity" values="0;1" begin="1.5s;stage4end.end+6.5s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
     </polygon>
   </g>
   
   <!-- Stage 2: Build -->
   <g>
-    <circle cx="280" cy="100" r="30" fill="#764ba2" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="1.5s;stage4end.end+6.5s" dur="0.5s" fill="freeze"/>
+    <circle cx="280" cy="100" r="30" fill="#764ba2" filter="url(#shadow)">
+      <animate attributeName="r" values="30;34;30" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="100" r="30" fill="none" stroke="#764ba2" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="30;45;30" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
     </circle>
     <rect x="270" y="90" width="20" height="20" fill="white" rx="2"/>
+    <rect x="272" y="95" width="7" height="10" fill="#764ba2">
+      <animate attributeName="height" values="10;5;10" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="95;100;95" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="281" y="92" width="7" height="13" fill="#764ba2">
+      <animate attributeName="height" values="13;8;13" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="92;97;92" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
     <text x="280" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#764ba2">Build</text>
   </g>
   
-  <!-- Arrow 2 -->
+  <!-- Arrow 2 with pulse -->
   <g>
-    <line x1="310" y1="100" x2="410" y2="100" stroke="#764ba2" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="2s;stage4end.end+7s" dur="1s" fill="freeze"/>
+    <line x1="310" y1="100" x2="410" y2="100" stroke="url(#pipelineGradient)" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
     </line>
     <polygon points="410,95 420,100 410,105" fill="#764ba2">
-      <animate attributeName="opacity" values="0;1" begin="3s;stage4end.end+8s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/>
     </polygon>
   </g>
   
   <!-- Stage 3: Test -->
   <g>
-    <circle cx="460" cy="100" r="30" fill="#a855f7" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="3s;stage4end.end+8s" dur="0.5s" fill="freeze"/>
+    <circle cx="460" cy="100" r="30" fill="#a855f7" filter="url(#shadow)">
+      <animate attributeName="r" values="30;34;30" dur="3s" begin="1s" repeatCount="indefinite"/>
     </circle>
-    <path d="M455,105 L458,108 L468,95" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="460" cy="100" r="30" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="30;45;30" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M455,105 L458,108 L468,95" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="0,20;20,0" dur="1s" begin="2s" fill="freeze" repeatCount="indefinite"/>
+    </path>
     <text x="460" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#a855f7">Test</text>
   </g>
   
-  <!-- Arrow 3 -->
+  <!-- Arrow 3 with pulse -->
   <g>
-    <line x1="490" y1="100" x2="590" y2="100" stroke="#a855f7" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="3.5s;stage4end.end+8.5s" dur="1s" fill="freeze"/>
+    <line x1="490" y1="100" x2="590" y2="100" stroke="url(#pipelineGradient)" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1s" repeatCount="indefinite"/>
     </line>
     <polygon points="590,95 600,100 590,105" fill="#a855f7">
-      <animate attributeName="opacity" values="0;1" begin="4.5s;stage4end.end+9.5s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
     </polygon>
   </g>
   
   <!-- Stage 4: Deploy -->
   <g>
-    <circle cx="640" cy="100" r="30" fill="#f093fb" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="4.5s;stage4end.end+9.5s" dur="0.5s" fill="freeze"/>
+    <circle cx="640" cy="100" r="30" fill="#f093fb" filter="url(#shadow)">
+      <animate attributeName="r" values="30;34;30" dur="3s" begin="1.5s" repeatCount="indefinite"/>
     </circle>
-    <path d="M635,95 L635,105 M640,90 L640,110 M645,95 L645,105" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="640" cy="100" r="30" fill="none" stroke="#f093fb" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="30;45;30" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <g>
+      <path d="M635,95 L635,105" stroke="white" stroke-width="3" stroke-linecap="round">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="0.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M640,90 L640,110" stroke="white" stroke-width="3" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.8s" begin="0.2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M645,95 L645,105" stroke="white" stroke-width="3" stroke-linecap="round">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
     <text x="640" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#f093fb">Deploy</text>
   </g>
   
-  <!-- Success checkmark -->
+  <!-- Success checkmark with celebration -->
   <g>
-    <circle cx="720" cy="100" r="15" fill="#10b981" filter="url(#glow)">
-      <animate id="stage4end" attributeName="opacity" values="0;1" begin="5.5s;stage4end.end+10.5s" dur="0.5s" fill="freeze"/>
+    <circle cx="720" cy="100" r="18" fill="#10b981" filter="url(#shadow)">
+      <animate attributeName="r" values="18;22;18" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <path d="M713,100 L717,104 L727,94" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M713,100 L717,104 L727,94" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Success particles -->
+    <circle cx="710" cy="90" r="2" fill="#10b981">
+      <animate attributeName="cy" values="90;70;90" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="730" cy="90" r="2" fill="#10b981">
+      <animate attributeName="cy" values="90;70;90" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="85" r="2" fill="#10b981">
+      <animate attributeName="cy" values="85;65;85" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
   </g>
+  
+  <!-- Status text with fade -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="13" font-weight="600" fill="#64748b">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    Pipeline Active • Processing...
+  </text>
 </svg>
