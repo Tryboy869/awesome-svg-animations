@@ -24,90 +24,80 @@
     }
   </style>
   
-  <!-- Background -->
   <rect width="800" height="200" fill="#f7fafc"/>
   
-  <!-- Pipeline base line -->
   <line x1="80" y1="100" x2="720" y2="100" stroke="#e2e8f0" stroke-width="3" stroke-dasharray="5,5"/>
   
   <!-- Stage 1: Commit -->
   <g>
     <circle cx="100" cy="100" r="30" fill="#667eea" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0s;stage4end.end+5s" fill="freeze"/>
     </circle>
     <path d="M95,95 L95,105 L105,105 L105,95 Z M97,97 L97,103 L103,103 L103,97 Z" fill="white"/>
-    <text x="100" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#667eea">
-      Commit
-    </text>
+    <text x="100" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#667eea">Commit</text>
   </g>
   
   <!-- Arrow 1 -->
   <g>
     <line x1="130" y1="100" x2="230" y2="100" stroke="#667eea" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="0.5s" dur="1s" fill="freeze"/>
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="0.5s;stage4end.end+5.5s" dur="1s" fill="freeze"/>
     </line>
     <polygon points="230,95 240,100 230,105" fill="#667eea">
-      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.5s;stage4end.end+6.5s" dur="0.3s" fill="freeze"/>
     </polygon>
   </g>
   
   <!-- Stage 2: Build -->
   <g>
     <circle cx="280" cy="100" r="30" fill="#764ba2" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="1.5s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.5s;stage4end.end+6.5s" dur="0.5s" fill="freeze"/>
     </circle>
     <rect x="270" y="90" width="20" height="20" fill="white" rx="2"/>
-    <text x="280" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#764ba2">
-      Build
-    </text>
+    <text x="280" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#764ba2">Build</text>
   </g>
   
   <!-- Arrow 2 -->
   <g>
     <line x1="310" y1="100" x2="410" y2="100" stroke="#764ba2" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="2s" dur="1s" fill="freeze"/>
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="2s;stage4end.end+7s" dur="1s" fill="freeze"/>
     </line>
     <polygon points="410,95 420,100 410,105" fill="#764ba2">
-      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="3s;stage4end.end+8s" dur="0.3s" fill="freeze"/>
     </polygon>
   </g>
   
   <!-- Stage 3: Test -->
   <g>
     <circle cx="460" cy="100" r="30" fill="#a855f7" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="3s;stage4end.end+8s" dur="0.5s" fill="freeze"/>
     </circle>
     <path d="M455,105 L458,108 L468,95" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <text x="460" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#a855f7">
-      Test
-    </text>
+    <text x="460" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#a855f7">Test</text>
   </g>
   
   <!-- Arrow 3 -->
   <g>
     <line x1="490" y1="100" x2="590" y2="100" stroke="#a855f7" stroke-width="3">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="3.5s" dur="1s" fill="freeze"/>
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" begin="3.5s;stage4end.end+8.5s" dur="1s" fill="freeze"/>
     </line>
     <polygon points="590,95 600,100 590,105" fill="#a855f7">
-      <animate attributeName="opacity" values="0;1" begin="4.5s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="4.5s;stage4end.end+9.5s" dur="0.3s" fill="freeze"/>
     </polygon>
   </g>
   
   <!-- Stage 4: Deploy -->
   <g>
     <circle cx="640" cy="100" r="30" fill="#f093fb" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="4.5s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="4.5s;stage4end.end+9.5s" dur="0.5s" fill="freeze"/>
     </circle>
     <path d="M635,95 L635,105 M640,90 L640,110 M645,95 L645,105" stroke="white" stroke-width="3" stroke-linecap="round"/>
-    <text x="640" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#f093fb">
-      Deploy
-    </text>
+    <text x="640" y="150" text-anchor="middle" font-family="Arial" font-size="14" font-weight="600" fill="#f093fb">Deploy</text>
   </g>
   
   <!-- Success checkmark -->
   <g>
     <circle cx="720" cy="100" r="15" fill="#10b981" filter="url(#glow)">
-      <animate attributeName="opacity" values="0;1" begin="5.5s" dur="0.5s" fill="freeze"/>
+      <animate id="stage4end" attributeName="opacity" values="0;1" begin="5.5s;stage4end.end+10.5s" dur="0.5s" fill="freeze"/>
     </circle>
     <path d="M713,100 L717,104 L727,94" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   </g>
