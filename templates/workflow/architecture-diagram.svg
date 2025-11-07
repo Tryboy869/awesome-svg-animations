@@ -25,25 +25,22 @@
   
   <rect width="600" height="400" fill="url(#bg)"/>
   
-  <!-- Title -->
   <text x="300" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">
     Microservices Architecture
   </text>
   
   <!-- Frontend -->
   <g>
-    <rect x="225" y="70" width="150" height="60" rx="8" fill="#3b82f6" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+    <rect x="225" y="70" width="150" height="60" rx="8" fill="#3b82f6">
+      <animate attributeName="opacity" values="0;1" begin="0s;archloop.end+5s" dur="0.5s" fill="freeze"/>
     </rect>
-    <text x="300" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      Frontend
-    </text>
+    <text x="300" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Frontend</text>
   </g>
   
   <!-- Connection 1 -->
   <g>
     <line x1="300" y1="130" x2="300" y2="170" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5">
-      <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="0.5s;archloop.end+5.5s" dur="0.3s" fill="freeze"/>
       <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
     </line>
     <circle cx="300" cy="140" r="3" fill="#60a5fa">
@@ -53,77 +50,68 @@
   
   <!-- API Gateway -->
   <g>
-    <rect x="225" y="170" width="150" height="60" rx="8" fill="#8b5cf6" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.5s" fill="freeze"/>
+    <rect x="225" y="170" width="150" height="60" rx="8" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0;1" begin="0.8s;archloop.end+5.8s" dur="0.5s" fill="freeze"/>
     </rect>
-    <text x="300" y="205" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      API Gateway
-    </text>
+    <text x="300" y="205" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">API Gateway</text>
   </g>
   
-  <!-- Connection to services -->
+  <!-- Connections to services -->
   <g>
-    <path d="M225,230 L100,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.3s" fill="freeze"/>
+    <path d="M225,230 L100,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="opacity" values="0;1" begin="1.3s;archloop.end+6.3s" dur="0.3s" fill="freeze"/>
       <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
     </path>
-    <path d="M300,230 L300,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.3s" fill="freeze"/>
+    <path d="M300,230 L300,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="opacity" values="0;1" begin="1.3s;archloop.end+6.3s" dur="0.3s" fill="freeze"/>
       <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
     </path>
-    <path d="M375,230 L500,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.3s" fill="freeze"/>
+    <path d="M375,230 L500,280" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="opacity" values="0;1" begin="1.3s;archloop.end+6.3s" dur="0.3s" fill="freeze"/>
       <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
     </path>
   </g>
   
   <!-- Service 1: Auth -->
   <g>
-    <rect x="25" y="280" width="150" height="60" rx="8" fill="#10b981" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze"/>
+    <rect x="25" y="280" width="150" height="60" rx="8" fill="#10b981">
+      <animate attributeName="opacity" values="0;1" begin="1.6s;archloop.end+6.6s" dur="0.5s" fill="freeze"/>
     </rect>
-    <text x="100" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
-      Auth Service
-    </text>
+    <text x="100" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Auth Service</text>
   </g>
   
   <!-- Service 2: Database -->
   <g>
-    <rect x="225" y="280" width="150" height="60" rx="8" fill="#f59e0b" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze"/>
+    <rect x="225" y="280" width="150" height="60" rx="8" fill="#f59e0b">
+      <animate attributeName="opacity" values="0;1" begin="1.8s;archloop.end+6.8s" dur="0.5s" fill="freeze"/>
     </rect>
-    <text x="300" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
-      Database
-    </text>
+    <text x="300" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Database</text>
   </g>
   
   <!-- Service 3: Cache -->
   <g>
-    <rect x="425" y="280" width="150" height="60" rx="8" fill="#ef4444" opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="2s" dur="0.5s" fill="freeze"/>
+    <rect x="425" y="280" width="150" height="60" rx="8" fill="#ef4444">
+      <animate attributeName="opacity" values="0;1" begin="2s;archloop.end+7s" dur="0.5s" fill="freeze"/>
     </rect>
-    <text x="500" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
-      Cache
-    </text>
+    <text x="500" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Cache</text>
   </g>
   
   <!-- Data flow indicators -->
-  <circle cx="100" cy="290" r="4" fill="#34d399" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" begin="2.5s" dur="2s" repeatCount="indefinite"/>
+  <circle cx="100" cy="290" r="4" fill="#34d399">
+    <animate attributeName="opacity" values="0;1;0" begin="2.5s;archloop.end+7.5s" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="300" cy="290" r="4" fill="#fbbf24" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" begin="2.7s" dur="2s" repeatCount="indefinite"/>
+  <circle cx="300" cy="290" r="4" fill="#fbbf24">
+    <animate attributeName="opacity" values="0;1;0" begin="2.7s;archloop.end+7.7s" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="500" cy="290" r="4" fill="#f87171" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" begin="2.9s" dur="2s" repeatCount="indefinite"/>
+  <circle cx="500" cy="290" r="4" fill="#f87171">
+    <animate attributeName="opacity" values="0;1;0" begin="2.9s;archloop.end+7.9s" dur="2s" repeatCount="indefinite"/>
   </circle>
   
   <!-- Status indicator -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="3s" dur="0.5s" fill="freeze"/>
-    <circle cx="30" cy="370" r="6" fill="#10b981"/>
-    <text x="45" y="375" font-family="Arial" font-size="12" fill="#94a3b8">
-      All Services Online
-    </text>
+  <g>
+    <circle cx="30" cy="370" r="6" fill="#10b981">
+      <animate id="archloop" attributeName="opacity" values="0;1" begin="3s;archloop.end+8s" dur="0.5s" fill="freeze"/>
+    </circle>
+    <text x="45" y="375" font-family="Arial" font-size="12" fill="#94a3b8">All Services Online</text>
   </g>
 </svg>
