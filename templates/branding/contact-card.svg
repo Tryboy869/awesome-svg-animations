@@ -1,299 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 250" role="img" aria-labelledby="title-cc desc-cc">
-  <title id="title-cc">Carte de Contact Animée</title>
-  <desc id="desc-cc">
-    Une carte de visite digitale animée. Elle affiche un avatar, un nom, un titre,
-    et des icônes de contact pour GitHub, LinkedIn, Twitter, et Email, qui
-    apparaissent en séquence.
-  </desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="contact-title contact-desc">
+  <title id="contact-title">Contact Information</title>
+  <desc id="contact-desc">Professional contact card with social links and email</desc>
+  
   <defs>
-    <!-- Filtre d'ombre portée pour la carte -->
-    <filter id="shadow-cc" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#000000" flood-opacity="0.2" />
-    </filter>
-
-    <!-- Gradient principal pour la carte -->
-    <linearGradient id="card-grad-cc" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" />
-      <stop offset="100%" stop-color="#0f172a" />
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
     </linearGradient>
-
-    <!-- Gradient pour le "hover" (highlight) -->
-    <linearGradient id="highlight-grad-cc">
-      <stop offset="0%" stop-color="white" stop-opacity="0" />
-      <stop offset="50%" stop-color="white" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="white" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Icônes (chemins SVG simplifiés) -->
-    <symbol id="icon-github-cc" viewBox="0 0 24 24">
-      <path
-        fill="currentColor"
-        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.203 11.383.6.113.82-.26.82-.578 0-.285-.01-1.04-.015-2.04-3.34.723-4.04-1.613-4.04-1.613-.547-1.387-1.333-1.758-1.333-1.758-1.09-.745.083-.73.083-.73 1.203.085 1.838 1.233 1.838 1.233 1.07 1.833 2.808 1.305 3.493.998.108-.775.418-1.305.76-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.235-3.223-.123-.303-.538-1.523.118-3.175 0 0 1.008-.323 3.3 1.23.958-.268 1.98-.403 3.003-.408 1.023.005 2.045.14 3.003.408 2.29-1.553 3.298-1.23 3.298-1.23.656 1.652.24 2.872.118 3.175.77.84 1.235 1.913 1.235 3.223 0 4.61-2.805 5.623-5.478 5.92.43.37.815 1.1.815 2.22 0 1.605-.015 2.895-.015 3.288 0 .32.218.695.825.578C20.566 21.797 24 17.297 24 12c0-6.63-5.373-12-12-12z"
-      />
-    </symbol>
-    <symbol id="icon-linkedin-cc" viewBox="0 0 24 24">
-      <path
-        fill="currentColor"
-        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-      />
-    </symbol>
-    <symbol id="icon-twitter-cc" viewBox="0 0 24 24">
-       <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-    </symbol>
-    <symbol id="icon-email-cc" viewBox="0 0 24 24">
-      <path
-        fill="currentColor"
-        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
-      />
-    </symbol>
   </defs>
-
-  <!-- Styles CSS -->
+  
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-    .font-cc {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Helvetica, Arial, sans-serif;
-    }
-    .name-cc {
-      font-size: 24px;
-      font-weight: 700;
-      fill: #f1f5f9;
-    }
-    .title-cc {
-      font-size: 16px;
-      font-weight: 400;
-      fill: #94a3b8;
-    }
-    .contact-text-cc {
-      font-size: 14px;
-      font-weight: 400;
-      fill: #cbd5e1;
-    }
-    .contact-icon-cc {
-      color: #94a3b8;
-      transition: color 0.3s;
-    }
-    .contact-g-cc:hover .contact-icon-cc {
-      color: #e2e8f0;
-    }
-    .contact-g-cc:hover .contact-text-cc {
-      fill: #f1f5f9;
-    }
-
     @media (prefers-reduced-motion: reduce) {
-      g,
-      rect,
-      text,
-      circle,
-      line {
-        animation: none !important;
-      }
-      .main-g-cc,
-      .contact-g-cc,
-      .header-g-cc,
-      .divider-cc {
-        opacity: 1;
-        transform: none;
-      }
+      * { animation: none !important; }
     }
   </style>
-
-  <!-- Conteneur principal pour la boucle -->
-  <g id="main-container-cc">
-
-    <!-- Fond de la carte -->
-    <rect
-      class="main-g-cc"
-      x="10"
-      y="10"
-      width="430"
-      height="230"
-      rx="12"
-      fill="url(#card-grad-cc)"
-      filter="url(#shadow-cc)"
-      opacity="0"
-    >
-      <animate
-        attributeName="opacity"
-        values="0;1"
-        begin="0.2s; loopend-cc.end+5.2s"
-        dur="0.5s"
-        fill="freeze"
-      />
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        values="0.95; 1"
-        begin="0.2s; loopend-cc.end+5.2s"
-        dur="0.5s"
-        fill="freeze"
-        transform-origin="225 125"
-        calcMode="spline"
-        keySplines="0.42 0 0.58 1"
-      />
+  
+  <rect width="600" height="300" fill="#f8fafc"/>
+  
+  <rect x="50" y="30" width="500" height="240" rx="15" fill="url(#cardBg)">
+    <animate attributeName="opacity" values="0;1" begin="0s;contactloop.end+5s" dur="0.5s" fill="freeze"/>
+  </rect>
+  
+  <circle cx="150" cy="110" r="45" fill="white">
+    <animate attributeName="opacity" values="0;1" begin="0.5s;contactloop.end+5.5s" dur="0.5s" fill="freeze"/>
+  </circle>
+  <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="36" fill="#3b82f6">
+    <animate attributeName="opacity" values="0;1" begin="0.5s;contactloop.end+5.5s" dur="0.5s" fill="freeze"/>
+    👤
+  </text>
+  
+  <text x="220" y="90" font-family="Arial" font-size="24" font-weight="bold" fill="white">
+    <animate attributeName="opacity" values="0;1" begin="1s;contactloop.end+6s" dur="0.5s" fill="freeze"/>
+    Your Name
+  </text>
+  
+  <text x="220" y="115" font-family="Arial" font-size="14" fill="#e0e7ff">
+    <animate attributeName="opacity" values="0;1" begin="1.3s;contactloop.end+6.3s" dur="0.5s" fill="freeze"/>
+    Full Stack Developer
+  </text>
+  
+  <g>
+    <rect x="70" y="170" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
+      <animate attributeName="opacity" values="0;1" begin="1.6s;contactloop.end+6.6s" dur="0.5s" fill="freeze"/>
     </rect>
-
-    <!-- Header: Avatar, Nom, Titre -->
-    <g class="header-g-cc" opacity="0">
-      <animate
-        attributeName="opacity"
-        values="0;1"
-        begin="0.6s; loopend-cc.end+5.6s"
-        dur="0.5s"
-        fill="freeze"
-      />
-      <!-- Avatar -->
-      <circle cx="225" cy="70" r="30" fill="#2563eb" />
-      <text x="225" y="78" font-size="28" fill="white" font-weight="700" text-anchor="middle" class="font-cc">JD</text>
-      
-      <!-- Nom -->
-      <text x="225" y="125" class="font-cc name-cc" text-anchor="middle">Jane Doe</text>
-      
-      <!-- Titre -->
-      <text x="225" y="148" class="font-cc title-cc" text-anchor="middle">Senior SVG Engineer</text>
-    </g>
-
-    <!-- Ligne de séparation -->
-    <line
-      class="divider-cc"
-      x1="40"
-      y1="170"
-      x2="410"
-      y2="170"
-      stroke="#334155"
-      stroke-width="1"
-      opacity="0"
-    >
-      <animate
-        attributeName="opacity"
-        values="0;1"
-        begin="1s; loopend-cc.end+6s"
-        dur="0.5s"
-        fill="freeze"
-      />
-       <animate
-        attributeName="x1"
-        values="225; 40"
-        begin="1s; loopend-cc.end+6s"
-        dur="0.5s"
-        fill="freeze"
-        calcMode="spline"
-        keySplines="0.42 0 0.58 1"
-      />
-       <animate
-        attributeName="x2"
-        values="225; 410"
-        begin="1s; loopend-cc.end+6s"
-        dur="0.5s"
-        fill="freeze"
-        calcMode="spline"
-        keySplines="0.42 0 0.58 1"
-      />
-    </line>
-
-    <!-- Liens de contact -->
-    <g id="contact-links-cc">
-      <!-- GitHub -->
-      <g class="contact-g-cc" opacity="0">
-        <use href="#icon-github-cc" x="40" y="195" width="20" height="20" class="contact-icon-cc" />
-        <text x="70" y="211" class="font-cc contact-text-cc">/github-user</text>
-        <animateTransform
-          attributeName="transform"
-          type="translate"
-          values="0 10; 0 0"
-          begin="1.2s; loopend-cc.end+6.2s"
-          dur="0.4s"
-          fill="freeze"
-        />
-        <animate attributeName="opacity" values="0;1" begin="1.2s; loopend-cc.end+6.2s" dur="0.4s" fill="freeze" />
-      </g>
-      <!-- LinkedIn -->
-      <g class="contact-g-cc" opacity="0">
-        <use href="#icon-linkedin-cc" x="240" y="195" width="20" height="20" class="contact-icon-cc" />
-        <text x="270" y="211" class="font-cc contact-text-cc">/linkedin-user</text>
-         <animateTransform
-          attributeName="transform"
-          type="translate"
-          values="0 10; 0 0"
-          begin="1.4s; loopend-cc.end+6.4s"
-          dur="0.4s"
-          fill="freeze"
-        />
-        <animate attributeName="opacity" values="0;1" begin="1.4s; loopend-cc.end+6.4s" dur="0.4s" fill="freeze" />
-      </g>
-      <!-- Twitter (X) -->
-      <!-- <g class="contact-g-cc" opacity="0">
-        <use href="#icon-twitter-cc" x="240" y="195" width="20" height="20" class="contact-icon-cc" />
-        <text x="270" y="211" class="font-cc contact-text-cc">/twitter-user</text>
-         <animateTransform
-          attributeName="transform"
-          type="translate"
-          values="0 10; 0 0"
-          begin="1.6s; loopend-cc.end+6.6s"
-          dur="0.4s"
-          fill="freeze"
-        />
-        <animate attributeName="opacity" values="0;1" begin="1.6s; loopend-cc.end+6.6s" dur="0.4s" fill="freeze" />
-      </g> -->
-      <!-- Email -->
-      <!-- <g class="contact-g-cc" opacity="0">
-        <use href="#icon-email-cc" x="40" y="235" width="20" height="20" class="contact-icon-cc" />
-        <text x="70" y="251" class="font-cc contact-text-cc">jane.doe@email.com</text>
-         <animateTransform
-          attributeName="transform"
-          type="translate"
-          values="0 10; 0 0"
-          begin="1.8s; loopend-cc.end+6.8s"
-          dur="0.4s"
-          fill="freeze"
-        />
-        <animate attributeName="opacity" values="0;1" begin="1.8s; loopend-cc.end+6.8s" dur="0.4s" fill="freeze" />
-      </g> -->
-    </g>
-
-    <!-- Micro-interaction: Glare/Highlight -->
-    <rect
-      x="-450"
-      y="0"
-      width="150"
-      height="250"
-      fill="url(#highlight-grad-cc)"
-      transform="skewX(-20)"
-      pointer-events="none"
-    >
-      <animate
-        attributeName="x"
-        values="-450; 900"
-        begin="2.5s; loopend-cc.end+7.5s"
-        dur="1s"
-        fill="freeze"
-        calcMode="spline"
-        keySplines="0.42 0 0.58 1"
-      />
+    <text x="85" y="193" font-family="Arial" font-size="14" fill="white">
+      <animate attributeName="opacity" values="0;1" begin="1.6s;contactloop.end+6.6s" dur="0.5s" fill="freeze"/>
+      ✉️ your.email@domain.com
+    </text>
+  </g>
+  
+  <g>
+    <rect x="310" y="170" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
+      <animate attributeName="opacity" values="0;1" begin="1.9s;contactloop.end+6.9s" dur="0.5s" fill="freeze"/>
     </rect>
-
-    <!-- Animation de boucle : fondu de sortie principal -->
-    <!-- Durée totale = 8s. Fondu de sortie à 7s. Pause de 5s. -->
-    <animate
-      id="loopend-cc"
-      xlink:href="#main-container-cc"
-      attributeName="opacity"
-      values="1;1;0"
-      keyTimes="0; 0.875; 1"
-      begin="0s; loopend-cc.end+5s"
-      dur="8s"
-      fill="freeze"
-    />
-     <!-- Rétablissement de l'opacité pour la prochaine boucle -->
-    <animate
-      xlink:href="#main-container-cc"
-      attributeName="opacity"
-      values="0;1"
-      begin="loopend-cc.end+4.9s"
-      dur="0.1s"
-      fill="freeze"
-    />
+    <text x="325" y="193" font-family="Arial" font-size="14" fill="white">
+      <animate attributeName="opacity" values="0;1" begin="1.9s;contactloop.end+6.9s" dur="0.5s" fill="freeze"/>
+      🔗 github.com/username
+    </text>
+  </g>
+  
+  <g>
+    <rect x="70" y="220" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
+      <animate attributeName="opacity" values="0;1" begin="2.2s;contactloop.end+7.2s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="85" y="243" font-family="Arial" font-size="14" fill="white">
+      <animate attributeName="opacity" values="0;1" begin="2.2s;contactloop.end+7.2s" dur="0.5s" fill="freeze"/>
+      🐦 twitter.com/handle
+    </text>
+  </g>
+  
+  <g>
+    <rect x="310" y="220" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
+      <animate attributeName="opacity" values="0;1" begin="2.5s;contactloop.end+7.5s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="325" y="243" font-family="Arial" font-size="14" fill="white">
+      <animate id="contactloop" attributeName="opacity" values="0;1" begin="2.5s;contactloop.end+7.5s" dur="0.5s" fill="freeze"/>
+      💼 linkedin.com/in/you
+    </text>
   </g>
 </svg>
