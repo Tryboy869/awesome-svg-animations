@@ -17,99 +17,77 @@
   
   <rect width="600" height="500" fill="url(#roadmapBg)"/>
   
-  <!-- Title -->
   <text x="300" y="35" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#1e293b">
     2024 Product Roadmap
   </text>
   
   <!-- Q1 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.5s" fill="freeze"/>
-    <rect x="50" y="80" width="220" height="80" rx="10" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
-    <text x="160" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      Q1 - Foundation
-    </text>
-    <text x="160" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#dbeafe">
-      ✓ User Authentication
-    </text>
-    <text x="160" y="142" text-anchor="middle" font-family="Arial" font-size="12" fill="#dbeafe">
-      ✓ Core Dashboard
-    </text>
+  <g>
+    <rect x="50" y="80" width="220" height="80" rx="10" fill="#3b82f6" stroke="#1e40af" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="0.5s;roadmaploop.end+5.5s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="160" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Q1 - Foundation</text>
+    <text x="160" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#dbeafe">✓ User Authentication</text>
+    <text x="160" y="142" text-anchor="middle" font-family="Arial" font-size="12" fill="#dbeafe">✓ Core Dashboard</text>
   </g>
   
-  <!-- Arrow 1 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="1s" dur="0.3s" fill="freeze"/>
-    <path d="M270,120 L330,120" stroke="#60a5fa" stroke-width="3"/>
+  <g>
+    <path d="M270,120 L330,120" stroke="#60a5fa" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1s;roadmaploop.end+6s" dur="0.3s" fill="freeze"/>
+    </path>
     <polygon points="330,115 340,120 330,125" fill="#60a5fa"/>
   </g>
   
   <!-- Q2 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.5s" fill="freeze"/>
-    <rect x="340" y="80" width="220" height="80" rx="10" fill="#8b5cf6" stroke="#6b21a8" stroke-width="2"/>
-    <text x="450" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      Q2 - Growth
-    </text>
-    <text x="450" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#ede9fe">
-      ✓ API Integration
-    </text>
-    <text x="450" y="142" text-anchor="middle" font-family="Arial" font-size="12" fill="#ede9fe">
-      ✓ Analytics Module
-    </text>
+  <g>
+    <rect x="340" y="80" width="220" height="80" rx="10" fill="#8b5cf6" stroke="#6b21a8" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="1.3s;roadmaploop.end+6.3s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="450" y="105" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Q2 - Growth</text>
+    <text x="450" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#ede9fe">✓ API Integration</text>
+    <text x="450" y="142" text-anchor="middle" font-family="Arial" font-size="12" fill="#ede9fe">✓ Analytics Module</text>
   </g>
   
-  <!-- Arrow 2 down -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.3s" fill="freeze"/>
-    <path d="M450,160 L450,220" stroke="#a78bfa" stroke-width="3"/>
+  <g>
+    <path d="M450,160 L450,220" stroke="#a78bfa" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="1.8s;roadmaploop.end+6.8s" dur="0.3s" fill="freeze"/>
+    </path>
     <polygon points="445,220 450,230 455,220" fill="#a78bfa"/>
   </g>
   
   <!-- Q3 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="2.1s" dur="0.5s" fill="freeze"/>
-    <rect x="340" y="230" width="220" height="80" rx="10" fill="#d946ef" stroke="#a21caf" stroke-width="2"/>
-    <text x="450" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      Q3 - Scale
-    </text>
-    <text x="450" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#fae8ff">
-      🔄 Mobile Apps
-    </text>
-    <text x="450" y="292" text-anchor="middle" font-family="Arial" font-size="12" fill="#fae8ff">
-      🔄 Team Features
-    </text>
+  <g>
+    <rect x="340" y="230" width="220" height="80" rx="10" fill="#d946ef" stroke="#a21caf" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="2.1s;roadmaploop.end+7.1s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="450" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Q3 - Scale</text>
+    <text x="450" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#fae8ff">🔄 Mobile Apps</text>
+    <text x="450" y="292" text-anchor="middle" font-family="Arial" font-size="12" fill="#fae8ff">🔄 Team Features</text>
   </g>
   
-  <!-- Arrow 3 left -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="2.6s" dur="0.3s" fill="freeze"/>
-    <path d="M340,270 L280,270" stroke="#f0abfc" stroke-width="3"/>
+  <g>
+    <path d="M340,270 L280,270" stroke="#f0abfc" stroke-width="3">
+      <animate attributeName="opacity" values="0;1" begin="2.6s;roadmaploop.end+7.6s" dur="0.3s" fill="freeze"/>
+    </path>
     <polygon points="280,265 270,270 280,275" fill="#f0abfc"/>
   </g>
   
   <!-- Q4 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="2.9s" dur="0.5s" fill="freeze"/>
-    <rect x="50" y="230" width="220" height="80" rx="10" fill="#ec4899" stroke="#be185d" stroke-width="2"/>
-    <text x="160" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">
-      Q4 - Innovation
-    </text>
-    <text x="160" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#fce7f3">
-      📅 AI Assistant
-    </text>
-    <text x="160" y="292" text-anchor="middle" font-family="Arial" font-size="12" fill="#fce7f3">
-      📅 Enterprise Plan
-    </text>
+  <g>
+    <rect x="50" y="230" width="220" height="80" rx="10" fill="#ec4899" stroke="#be185d" stroke-width="2">
+      <animate attributeName="opacity" values="0;1" begin="2.9s;roadmaploop.end+7.9s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="160" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">Q4 - Innovation</text>
+    <text x="160" y="275" text-anchor="middle" font-family="Arial" font-size="12" fill="#fce7f3">📅 AI Assistant</text>
+    <text x="160" y="292" text-anchor="middle" font-family="Arial" font-size="12" fill="#fce7f3">📅 Enterprise Plan</text>
   </g>
   
   <!-- Legend -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="3.5s" dur="0.5s" fill="freeze"/>
-    <rect x="180" y="360" width="240" height="100" rx="8" fill="white" stroke="#cbd5e1" stroke-width="2"/>
-    <text x="300" y="385" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">
-      Status Legend
-    </text>
+  <g>
+    <rect x="180" y="360" width="240" height="100" rx="8" fill="white" stroke="#cbd5e1" stroke-width="2">
+      <animate id="roadmaploop" attributeName="opacity" values="0;1" begin="3.5s;roadmaploop.end+8.5s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <text x="300" y="385" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">Status Legend</text>
     
     <circle cx="210" cy="405" r="6" fill="#10b981"/>
     <text x="225" y="410" font-family="Arial" font-size="12" fill="#64748b">✓ Completed</text>
