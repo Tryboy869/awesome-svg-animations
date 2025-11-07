@@ -18,63 +18,63 @@
   <rect width="600" height="300" fill="#f8fafc"/>
   
   <rect x="50" y="30" width="500" height="240" rx="15" fill="url(#cardBg)">
-    <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" begin="0s;contactloop.end+5s" dur="0.5s" fill="freeze"/>
   </rect>
   
   <circle cx="150" cy="110" r="45" fill="white">
-    <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" begin="0.5s;contactloop.end+5.5s" dur="0.5s" fill="freeze"/>
   </circle>
   <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="36" fill="#3b82f6">
-    <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" begin="0.5s;contactloop.end+5.5s" dur="0.5s" fill="freeze"/>
     👤
   </text>
   
   <text x="220" y="90" font-family="Arial" font-size="24" font-weight="bold" fill="white">
-    <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" begin="1s;contactloop.end+6s" dur="0.5s" fill="freeze"/>
     Your Name
   </text>
   
   <text x="220" y="115" font-family="Arial" font-size="14" fill="#e0e7ff">
-    <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" begin="1.3s;contactloop.end+6.3s" dur="0.5s" fill="freeze"/>
     Full Stack Developer
   </text>
   
   <g>
     <rect x="70" y="170" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
-      <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.6s;contactloop.end+6.6s" dur="0.5s" fill="freeze"/>
     </rect>
     <text x="85" y="193" font-family="Arial" font-size="14" fill="white">
-      <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.6s;contactloop.end+6.6s" dur="0.5s" fill="freeze"/>
       ✉️ your.email@domain.com
     </text>
   </g>
   
   <g>
     <rect x="310" y="170" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
-      <animate attributeName="opacity" values="0;1" begin="1.9s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.9s;contactloop.end+6.9s" dur="0.5s" fill="freeze"/>
     </rect>
     <text x="325" y="193" font-family="Arial" font-size="14" fill="white">
-      <animate attributeName="opacity" values="0;1" begin="1.9s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="1.9s;contactloop.end+6.9s" dur="0.5s" fill="freeze"/>
       🔗 github.com/username
     </text>
   </g>
   
   <g>
     <rect x="70" y="220" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
-      <animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="2.2s;contactloop.end+7.2s" dur="0.5s" fill="freeze"/>
     </rect>
     <text x="85" y="243" font-family="Arial" font-size="14" fill="white">
-      <animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="2.2s;contactloop.end+7.2s" dur="0.5s" fill="freeze"/>
       🐦 twitter.com/handle
     </text>
   </g>
   
   <g>
     <rect x="310" y="220" width="220" height="35" rx="8" fill="white" fill-opacity="0.2">
-      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" begin="2.5s;contactloop.end+7.5s" dur="0.5s" fill="freeze"/>
     </rect>
     <text x="325" y="243" font-family="Arial" font-size="14" fill="white">
-      <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze"/>
+      <animate id="contactloop" attributeName="opacity" values="0;1" begin="2.5s;contactloop.end+7.5s" dur="0.5s" fill="freeze"/>
       💼 linkedin.com/in/you
     </text>
   </g>
