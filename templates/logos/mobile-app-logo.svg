@@ -1,0 +1,179 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mobile-title mobile-desc">
+  <title id="mobile-title">Mobile App Logo - Animated</title>
+  <desc id="mobile-desc">App icon style logo with bounce effect and notification badge for mobile applications</desc>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="appGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="badgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5576c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1"/>
+    </linearGradient>
+    
+    <radialGradient id="glowRadial">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Filters -->
+    <filter id="appGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="badgeGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0a0a0a"/>
+  
+  <!-- Glow background -->
+  <circle cx="200" cy="200" r="140" fill="url(#glowRadial)" opacity="0.3">
+    <animate attributeName="r" values="140;160;140" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main app icon (with bounce) -->
+  <g transform="translate(200, 200)">
+    <g>
+      <!-- Bounce animation -->
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0,0; 0,-10; 0,0"
+                        dur="2s"
+                        repeatCount="indefinite"/>
+      
+      <!-- App icon rounded square -->
+      <rect x="-80" y="-80" width="160" height="160" rx="35" fill="url(#appGradient)" filter="url(#appGlow)">
+        <animate attributeName="rx" values="35;40;35" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      
+      <!-- Inner symbol (lightning bolt style) -->
+      <path d="M-10,-40 L-10,0 L-30,0 L10,40 L10,5 L30,5 Z" fill="white" opacity="0.9">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Shine effect -->
+      <rect x="-80" y="-80" width="40" height="160" rx="35" fill="white" opacity="0.2">
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          from="-100 0"
+                          to="200 0"
+                          dur="6s"
+                          repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  
+  <!-- Notification badge -->
+  <g transform="translate(260, 140)">
+    <circle r="20" fill="url(#badgeGradient)" filter="url(#badgeGlow)">
+      <animate attributeName="r" values="20;24;20" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="7" font-size="18" font-weight="bold" fill="white" text-anchor="middle">3</text>
+    
+    <!-- Pulse ring around badge -->
+    <circle r="20" fill="none" stroke="#f5576c" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="20;35;50" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Orbiting dots -->
+  <g transform="translate(200, 200)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+      <circle cx="120" cy="0" r="4" fill="#667eea" opacity="0.8">
+        <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <g transform="translate(200, 200)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="12s" repeatCount="indefinite"/>
+      <circle cx="120" cy="0" r="4" fill="#764ba2" opacity="0.8">
+        <animate attributeName="r" values="4;6;4" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <g transform="translate(200, 200)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="12s" repeatCount="indefinite"/>
+      <circle cx="120" cy="0" r="4" fill="#4facfe" opacity="0.8">
+        <animate attributeName="r" values="4;6;4" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Floating interface elements -->
+  <g opacity="0.5">
+    <!-- Menu icon -->
+    <g transform="translate(100, 150)">
+      <rect y="0" width="20" height="2" rx="1" fill="white"/>
+      <rect y="6" width="20" height="2" rx="1" fill="white"/>
+      <rect y="12" width="20" height="2" rx="1" fill="white"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="5s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Settings icon -->
+    <g transform="translate(280, 250)">
+      <circle r="8" fill="none" stroke="white" stroke-width="2"/>
+      <circle r="3" fill="white"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Heart icon -->
+    <g transform="translate(120, 280)">
+      <path d="M0,-5 C-3,-8 -8,-8 -8,-3 C-8,2 0,8 0,8 C0,8 8,2 8,-3 C8,-8 3,-8 0,-5" fill="white"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="4.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <circle cx="130" cy="120" r="2" fill="#667eea">
+      <animate attributeName="cy" values="120;100;120" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="180" r="2" fill="#764ba2">
+      <animate attributeName="cy" values="180;160;180" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="280" r="2" fill="#4facfe">
+      <animate attributeName="cy" values="280;260;280" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="290" r="2" fill="#f093fb">
+      <animate attributeName="cy" values="290;270;290" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Shadow beneath icon -->
+  <ellipse cx="200" cy="290" rx="60" ry="10" fill="black" opacity="0.2">
+    <animate attributeName="rx" values="60;65;60" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.3;0.2" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
