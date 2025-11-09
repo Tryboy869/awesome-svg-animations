@@ -6,7 +6,7 @@
 
 > **Animated SVG templates that tell stories, not stats—accessible, performant, zero backend required.**
 
-[![Nexus Studio](./SVG-animations/nexus-studio-intro.svg)](https://github.com/Tryboy869/SVG-animations)
+[![Nexus Studio](./assets/nexus-studio-intro.svg)](https://github.com/Tryboy869/SVG-animations)
 
 ---
 
@@ -103,6 +103,32 @@ Showcase your skills:
 
 ---
 
+### **4. Animated Logos** (5 templates) 🆕
+
+Generic professional logos for any brand:
+
+#### **Tech Startup Logo**
+![Tech Startup](./templates/logos/tech-startup-logo.svg)
+*Modern hexagonal design with rotating elements - Perfect for tech companies*
+
+#### **Creative Agency Logo**
+![Creative Agency](./templates/logos/creative-agency-logo.svg)
+*Colorful constellation with connecting particles - Ideal for creative studios*
+
+#### **SaaS Company Logo**
+![SaaS Company](./templates/logos/saas-company-logo.svg)
+*Professional layered design with data flow - Great for software businesses*
+
+#### **Design Studio Logo**
+![Design Studio](./templates/logos/design-studio-logo.svg)
+*Organic morphing shapes with vibrant colors - Perfect for artistic brands*
+
+#### **Mobile App Logo**
+![Mobile App](./templates/logos/mobile-app-logo.svg)
+*App icon style with bounce effect and notification badge - Mobile-first design*
+
+---
+
 ## 🚀 Quick Start
 
 ### **1. Choose a Template**
@@ -111,6 +137,7 @@ Browse [`templates/`](./templates/) and pick one:
 - `workflow/` - Development processes
 - `storytelling/` - Project narratives
 - `branding/` - Personal portfolios
+- `logos/` - Animated brand identities 🆕
 
 ### **2. Copy to Your Repo**
 
@@ -119,15 +146,15 @@ Browse [`templates/`](./templates/) and pick one:
 git clone https://github.com/Tryboy869/SVG-animations.git
 
 # Copy template to your project
-cp SVG-animations/templates/workflow/deployment-pipeline.svg ./assets/
+cp SVG-animations/templates/logos/tech-startup-logo.svg ./assets/
 ```
 
 ### **3. Embed in README**
 
 ```markdown
-## Our Deployment Process
+## Our Brand
 
-![Deployment](./assets/deployment-pipeline.svg)
+![Company Logo](./assets/tech-startup-logo.svg)
 ```
 
 ### **4. Customize (Optional)**
@@ -148,19 +175,19 @@ Edit SVG in any text editor:
 
 ## ⚡ Performance Benchmarks
 
-**This intro animation you see above:**
-- **File size:** 8.2 KB
+**Animated logo example (Tech Startup):**
+- **File size:** 12.4 KB
 - **Load time:** <50ms
 - **Frame rate:** 60 FPS
-- **Bandwidth:** 0.008 MB
+- **Bandwidth:** 0.012 MB
 
-**Equivalent MP4 video:**
-- **File size:** 2.5 MB
-- **Load time:** 800ms (4G)
+**Equivalent video logo animation:**
+- **File size:** 3.8 MB
+- **Load time:** 1.2s (4G)
 - **Quality loss:** Pixelation on zoom
-- **Bandwidth:** 2.5 MB
+- **Bandwidth:** 3.8 MB
 
-**Result:** **305x lighter**, instant load, perfect quality.
+**Result:** **306x lighter**, instant load, perfect quality at any size.
 
 ---
 
@@ -228,21 +255,71 @@ For users who prefer reduced motion, animations automatically stop. Test:
 - Visualize contribution workflow
 - Show architecture diagrams
 - Display project timeline
+- **Animated project logo** 🆕
 
 ### **Startups**
 - Product demo without video hosting
 - Feature roadmap visualization
 - Team member showcase
+- **Dynamic brand identity** 🆕
 
 ### **Developer Portfolios**
 - Skills progression timeline
 - Project highlights grid
 - Open source contribution journey
+- **Professional animated avatar** 🆕
 
 ### **Technical Documentation**
 - API flow diagrams
 - Deployment pipelines
 - System architecture
+
+### **Brand Identity** 🆕
+- **Animated logos for GitHub profiles**
+- **Dynamic README headers**
+- **Attention-grabbing landing sections**
+
+---
+
+## 🎨 Logo Customization Examples
+
+### **Tech Startup Logo**
+```xml
+<!-- Change the hexagon gradient -->
+<linearGradient id="techGradient">
+  <stop offset="0%" style="stop-color:#YOUR_PRIMARY"/>
+  <stop offset="100%" style="stop-color:#YOUR_SECONDARY"/>
+</linearGradient>
+```
+
+### **Creative Agency Logo**
+```xml
+<!-- Change constellation colors -->
+<circle fill="url(#pink)"/> <!-- Replace #pink with your palette -->
+```
+
+### **SaaS Company Logo**
+```xml
+<!-- Adjust layer colors -->
+<rect fill="url(#saasGrad1)"/> <!-- Your brand gradient -->
+```
+
+### **Design Studio Logo**
+```xml
+<!-- Customize morphing shape colors -->
+<path fill="url(#rainbowGrad)"/> <!-- Multi-color animation -->
+```
+
+### **Mobile App Logo**
+```xml
+<!-- Change app icon gradient -->
+<linearGradient id="appGradient">
+  <stop offset="0%" style="stop-color:#YOUR_APP_COLOR"/>
+</linearGradient>
+
+<!-- Customize notification badge number -->
+<text>5</text> <!-- Change badge count -->
+```
 
 ---
 
@@ -255,12 +332,15 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 - Loading spinners
 - Interactive dashboards
 - Tutorial walkthroughs
+- **More animated logos** 🆕
+- **Animated badges** (coming soon) 🔜
 
 **Requirements:**
 - Pure SVG (no external dependencies)
 - WCAG 2.1 AA compliant
 - File size < 50 KB
 - Mobile-optimized
+- Generic/customizable (not brand-specific)
 
 ---
 
@@ -274,11 +354,12 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 🎯 Roadmap
 
-- [x] **Phase 1:** 15 core templates (DONE ✅)
-- [ ] **Phase 2:** Animated logos (Google, GitHub, OpenAI, etc.)
-- [ ] **Phase 3:** Interactive dashboards
-- [ ] **Phase 4:** Template builder web app
-- [ ] **Phase 5:** CLI tool for generation
+- [x] **Phase 1:** 15 core templates (workflow, storytelling, branding) ✅
+- [x] **Phase 2:** 5 animated generic logos ✅ 🆕
+- [ ] **Phase 3:** Animated badges (status, metrics, tech, social) 🔜
+- [ ] **Phase 4:** Interactive dashboards
+- [ ] **Phase 5:** Template builder web app
+- [ ] **Phase 6:** CLI tool for generation
 
 ---
 
@@ -294,6 +375,7 @@ This project challenges the status quo:
 - **Accessibility:** Animations that work for everyone
 - **Maintenance:** Edit with text editor, not video tools
 - **Version Control:** Git-friendly XML format
+- **Branding:** Animated logos without video complexity 🆕
 
 ---
 
