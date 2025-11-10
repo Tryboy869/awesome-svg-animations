@@ -1,0 +1,35 @@
+<svg width="130" height="20" viewBox="0 0 130 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="contrib-title">
+  <title id="contrib-title">Contributors Badge</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <defs>
+    <linearGradient id="contribGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="78" height="20" fill="#555"/>
+  <text x="39" y="14" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle">contributors</text>
+  
+  <rect x="78" width="52" height="20" fill="url(#contribGrad)">
+    <animate attributeName="opacity" values="1;0.9;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="104" y="14" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">42</text>
+  
+  <!-- People icons -->
+  <circle cx="84" cy="10" r="2" fill="#fff" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="88" cy="10" r="2" fill="#fff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="92" cy="10" r="2" fill="#fff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.5;0.7" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>
