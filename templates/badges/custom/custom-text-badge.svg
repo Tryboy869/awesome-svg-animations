@@ -1,0 +1,44 @@
+<svg width="140" height="20" viewBox="0 0 140 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="custom-title">
+  <title id="custom-title">Custom Badge Template</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <defs>
+    <!-- Change these gradients to customize colors -->
+    <linearGradient id="customLeftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="customRightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Left section - EDIT THIS TEXT -->
+  <rect width="60" height="20" fill="url(#customLeftGrad)">
+    <animate attributeName="opacity" values="1;0.9;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="30" y="14" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">
+    YOUR TEXT
+  </text>
+  
+  <!-- Right section - EDIT THIS TEXT -->
+  <rect x="60" width="80" height="20" fill="url(#customRightGrad)">
+    <animate attributeName="opacity" values="1;0.88;1" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="100" y="14" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">
+    CUSTOM VALUE
+  </text>
+  
+  <!-- Optional pulse indicator -->
+  <circle cx="132" cy="10" r="2" fill="#fff" opacity="0.8">
+    <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
