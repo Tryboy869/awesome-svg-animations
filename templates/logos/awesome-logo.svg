@@ -1,211 +1,78 @@
-<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="awesome-title awesome-desc">
-  <title id="awesome-title">Awesome Logo - Animated</title>
-  <desc id="awesome-desc">Cool sunglasses logo with progressive reveal and multicolor background shine</desc>
-  
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
-  </style>
-  
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="awesome-brand-title">
+  <title id="awesome-brand-title">Awesome Pink Loop Animation</title>
+
   <defs>
-    <!-- Gradients for sunglasses -->
-    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#c94b8b;stop-opacity:1"/>
-    </linearGradient>
-    
-    <!-- Rainbow background gradients -->
-    <linearGradient id="rainbow1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.3">
-        <animate attributeName="stop-color" values="#ff6b9d;#feca57;#48dbfb;#ff9ff3;#ff6b9d" dur="10s" begin="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#feca57;stop-opacity:0.3">
-        <animate attributeName="stop-color" values="#feca57;#48dbfb;#ff9ff3;#ff6b9d;#feca57" dur="10s" begin="5s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    
-    <radialGradient id="rainbow2">
-      <stop offset="0%" style="stop-color:#48dbfb;stop-opacity:0.4">
-        <animate attributeName="stop-color" values="#48dbfb;#ff9ff3;#ff6b9d;#feca57;#48dbfb" dur="10s" begin="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#ff9ff3;stop-opacity:0">
-        <animate attributeName="stop-color" values="#ff9ff3;#ff6b9d;#feca57;#48dbfb;#ff9ff3" dur="10s" begin="5s" repeatCount="indefinite"/>
-      </stop>
+    <!-- Dégradé visage -->
+    <radialGradient id="faceGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="80%" stop-color="#FFD93D"/>
+      <stop offset="100%" stop-color="#F4C20D"/>
     </radialGradient>
     
-    <!-- Filters -->
-    <filter id="glowPink">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <!-- Dégradé rose lunettes -->
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff85b3"/>
+      <stop offset="100%" stop-color="#ff5c94"/>
+    </linearGradient>
+
+    <!-- MASQUE pour la brillance : ne montre que la forme des lunettes -->
+    <clipPath id="glassesClip">
+       <path d="M-100,-15 C-100,-15 -90,35 -50,35 C-20,35 -5,10 -5,10 L5,10 C5,10 20,35 50,35 C90,35 100,-15 100,-15 L90,-25 C90,-25 20,-25 0,-25 C-20,-25 -90,-25 -90,-25 Z" />
+    </clipPath>
   </defs>
-  
-  <!-- Background -->
-  <rect width="400" height="400" fill="#1a1a1a"/>
-  
-  <!-- Rainbow shine backgrounds (start at 5s) -->
-  <circle cx="200" cy="150" r="120" fill="url(#rainbow2)" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.6;0.6" keyTimes="0;0.9;0.95;1" dur="5.5s" fill="freeze"/>
-    <animate attributeName="r" values="120;140;120" dur="8s" begin="5s" repeatCount="indefinite"/>
-  </circle>
-  
-  <rect width="400" height="400" fill="url(#rainbow1)" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.4;0.4" keyTimes="0;0.9;0.95;1" dur="5.5s" fill="freeze"/>
-  </rect>
-  
-  <!-- Sunglasses (progressive reveal) -->
-  <g transform="translate(200, 140)">
+
+  <!-- FOND NOIR -->
+  <rect width="400" height="400" fill="#1a1a1a" />
+
+  <!-- GROUPE PRINCIPAL CENTRÉ -->
+  <g transform="translate(200, 200)">
     
-    <!-- Left frame -->
-    <path d="M-90,-25 L-70,-45 L-20,-45 L-20,0 Q-20,25 -45,25 Q-70,25 -70,0 Z" 
-          fill="url(#pinkGrad)" 
-          filter="url(#glowPink)"
-          opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+    <!-- 1. VISAGE (Animation en boucle toutes les 5s) -->
+    <circle r="120" fill="url(#faceGrad)" transform="scale(0)">
+      <!-- Apparition : 0s -> 0.6s. Reste visible jusqu'à 4.5s. Disparition : 4.5s -> 5s -->
+      <animateTransform attributeName="transform" type="scale" 
+        values="0;1.1;1; 1; 0" 
+        keyTimes="0; 0.12; 0.2; 0.9; 1" 
+        dur="5s" repeatCount="indefinite" 
+        calcMode="spline" 
+        keySplines="0.34, 1.56, 0.64, 1; 0.34, 1.56, 0.64, 1; 0,0,1,1; 0.34, 0, 0.64, 1"/>
+    </circle>
+
+    <!-- 2. SOURIRE (Boucle) -->
+    <path d="M-50,60 Q0,100 50,60" stroke="#3E2723" stroke-width="8" stroke-linecap="round" fill="none" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0; 0.32; 0.42; 0.9; 1" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,10; 0,10; 0,0; 0,0; 0,10" keyTimes="0; 0.32; 0.42; 0.9; 1" dur="5s" repeatCount="indefinite"/>
     </path>
-    
-    <!-- Right frame -->
-    <path d="M90,-25 L70,-45 L20,-45 L20,0 Q20,25 45,25 Q70,25 70,0 Z" 
-          fill="url(#pinkGrad)" 
-          filter="url(#glowPink)"
-          opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="1s" begin="0.3s" fill="freeze"/>
-    </path>
-    
-    <!-- Bridge -->
-    <rect x="-15" y="-45" width="30" height="8" 
-          fill="url(#pinkGrad)" 
-          filter="url(#glowPink)"
-          opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
-    </rect>
-    
-    <!-- Left temple -->
-    <path d="M-90,-25 L-120,-35" 
-          stroke="url(#pinkGrad)" 
-          stroke-width="8" 
-          stroke-linecap="round"
-          fill="none"
-          filter="url(#glowPink)"
-          opacity="0"
-          stroke-dasharray="40"
-          stroke-dashoffset="40">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
-      <animate attributeName="stroke-dashoffset" values="40;0" dur="0.5s" begin="0.9s" fill="freeze"/>
-    </path>
-    
-    <!-- Right temple -->
-    <path d="M90,-25 L120,-35" 
-          stroke="url(#pinkGrad)" 
-          stroke-width="8" 
-          stroke-linecap="round"
-          fill="none"
-          filter="url(#glowPink)"
-          opacity="0"
-          stroke-dasharray="40"
-          stroke-dashoffset="40">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
-      <animate attributeName="stroke-dashoffset" values="40;0" dur="0.5s" begin="0.9s" fill="freeze"/>
-    </path>
-    
-    <!-- Lens shadows (depth) -->
-    <ellipse cx="-45" cy="5" rx="22" ry="18" fill="#000" opacity="0">
-      <animate attributeName="opacity" values="0;0.3" dur="0.5s" begin="1.4s" fill="freeze"/>
-    </ellipse>
-    <ellipse cx="45" cy="5" rx="22" ry="18" fill="#000" opacity="0">
-      <animate attributeName="opacity" values="0;0.3" dur="0.5s" begin="1.4s" fill="freeze"/>
-    </ellipse>
-    
-    <!-- Subtle pulse after reveal (starts at 5s) -->
-    <animateTransform attributeName="transform"
-                      type="scale"
-                      values="1 1;1.02 1.02;1 1"
-                      dur="4s"
-                      begin="5s"
-                      repeatCount="indefinite"
-                      additive="sum"/>
+
+    <!-- 3. LUNETTES (Boucle) -->
+    <g id="sunglasses" transform="translate(0, -400)">
+      <!-- Chute : commence à 0.8s (0.16 dans la boucle de 5s) -->
+      <animateTransform attributeName="transform" type="translate" 
+        values="0,-400; 0,-400; 0,20; 0,-10; 0,0; 0,0; 0,-400" 
+        keyTimes="0; 0.16; 0.28; 0.32; 0.36; 0.9; 1" 
+        dur="5s" repeatCount="indefinite"
+        calcMode="linear"/> <!-- Simplifié pour la boucle, le spline est complexe à ajuster parfaitement en keyTimes -->
+
+      <!-- Forme lunettes rose -->
+      <path d="M-100,-15 C-100,-15 -90,35 -50,35 C-20,35 -5,10 -5,10 L5,10 C5,10 20,35 50,35 C90,35 100,-15 100,-15 L90,-25 C90,-25 20,-25 0,-25 C-20,-25 -90,-25 -90,-25 Z" fill="url(#pinkGrad)"/>
+      
+      <!-- Reflets fixes -->
+      <path d="M-85,-15 L-40,-15 C-40,-15 -50,5 -80,5 C-80,5 -85,-5 -85,-15 Z" fill="white" opacity="0.3"/>
+      <path d="M65,-15 L20,-15 C20,-15 30,5 60,5 C60,5 65,-5 65,-15 Z" fill="white" opacity="0.3"/>
+
+      <!-- BRILLANCE CORRIGÉE (Masquée par clip-path="url(#glassesClip)") -->
+      <g clip-path="url(#glassesClip)">
+        <rect x="-150" y="-100" width="40" height="200" fill="white" opacity="0.5" transform="rotate(30)">
+          <!-- Passe une fois vers 2.5s (0.5 dans la boucle de 5s) -->
+          <animate attributeName="x" values="-200; -200; 300; 300" keyTimes="0; 0.45; 0.65; 1" dur="5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
   </g>
-  
-  <!-- "AWESOME" text (letter by letter reveal) -->
-  <g transform="translate(200, 280)" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#7c7c9e" text-anchor="middle">
-    
-    <!-- A -->
-    <text x="-120" y="0" opacity="0">
-      A
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="2s" fill="freeze"/>
-    </text>
-    
-    <!-- W -->
-    <text x="-70" y="0" opacity="0">
-      W
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.2s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="2.2s" fill="freeze"/>
-    </text>
-    
-    <!-- E -->
-    <text x="-25" y="0" opacity="0">
-      E
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.4s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="2.4s" fill="freeze"/>
-    </text>
-    
-    <!-- S -->
-    <text x="20" y="0" opacity="0">
-      S
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.6s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="2.6s" fill="freeze"/>
-    </text>
-    
-    <!-- O -->
-    <text x="60" y="0" opacity="0">
-      O
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.8s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="2.8s" fill="freeze"/>
-    </text>
-    
-    <!-- M -->
-    <text x="105" y="0" opacity="0">
-      M
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="3s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="3s" fill="freeze"/>
-    </text>
-    
-    <!-- E -->
-    <text x="155" y="0" opacity="0">
-      E
-      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="3.2s" fill="freeze"/>
-      <animate attributeName="y" values="10;0" dur="0.3s" begin="3.2s" fill="freeze"/>
-    </text>
-    
-    <!-- Subtle text pulse (after 5s) -->
-    <animate attributeName="opacity" values="1;0.85;1" dur="3s" begin="5s" repeatCount="indefinite"/>
-  </g>
-  
-  <!-- Floating sparkles (appear after full reveal at 5s) -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;0.7" dur="1s" begin="5s" fill="freeze"/>
-    
-    <circle cx="120" cy="100" r="2" fill="#feca57">
-      <animate attributeName="cy" values="100;80;100" dur="6s" begin="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="6s" begin="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="280" cy="120" r="2" fill="#48dbfb">
-      <animate attributeName="cy" values="120;100;120" dur="7s" begin="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="7s" begin="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="150" cy="250" r="2" fill="#ff9ff3">
-      <animate attributeName="cy" values="250;230;250" dur="5s" begin="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="5s" begin="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="250" cy="260" r="2" fill="#ff6b9d">
-      <animate attributeName="cy" values="260;240;260" dur="6.5s" begin="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;0" dur="6.5s" begin="5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
+
+  <!-- 4. TEXTE (Boucle) -->
+  <text x="200" y="370" font-family="'Courier New', monospace" font-weight="bold" font-size="50" letter-spacing="4" text-anchor="middle" fill="#ff6b9d" opacity="0">
+    awesome
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0; 0.4; 0.56; 0.9; 1" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,20; 0,20; 0,0; 0,0; 0,20" keyTimes="0; 0.4; 0.56; 0.9; 1" dur="5s" repeatCount="indefinite"/>
+  </text>
 </svg>
