@@ -1,0 +1,31 @@
+<svg width="85" height="20" viewBox="0 0 85 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="node-title">
+  <title id="node-title">Node.js Badge</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <defs>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#68a063;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#44883e;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="85" height="20" fill="url(#nodeGrad)">
+    <animate attributeName="opacity" values="1;0.9;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Node.js logo simplified -->
+  <path d="M10,6 L6,8 L6,12 L10,14 L14,12 L14,8 Z" fill="#3c873a" stroke="#fff" stroke-width="0.5">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <text x="18" y="14" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff">Node.js</text>
+  
+  <circle cx="77" cy="10" r="2" fill="#fff" opacity="0.8">
+    <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
