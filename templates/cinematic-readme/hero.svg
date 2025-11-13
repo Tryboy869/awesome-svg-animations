@@ -1,1 +1,242 @@
-.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>DevFlow - The Complete Developer Platform</title>
+  
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea">
+        <animate attributeName="stop-color" values="#667eea;#764ba2;#667eea" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#764ba2">
+        <animate attributeName="stop-color" values="#764ba2;#667eea;#764ba2" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="accentGrad">
+      <stop offset="0%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+    
+    <linearGradient id="goldGrad">
+      <stop offset="0%" stop-color="#ffd89b"/>
+      <stop offset="100%" stop-color="#19547b"/>
+    </linearGradient>
+    
+    <filter id="heroGlow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Shine effect clipPath -->
+    <clipPath id="shineClip">
+      <rect x="0" y="0" width="1200" height="800"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#heroBg)"/>
+  
+  <!-- Animated grid overlay -->
+  <g opacity="0.15">
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#fff" stroke-width="1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.4">
+    <circle cx="100" cy="100" r="5" fill="#fff">
+      <animateMotion dur="20s" repeatCount="indefinite" 
+                     path="M0,0 Q400,-100 800,0 Q1200,100 1200,200"/>
+      <animate attributeName="opacity" values="0;1;0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="700" r="4" fill="#fff">
+      <animateMotion dur="25s" repeatCount="indefinite" 
+                     path="M0,0 Q-200,150 -400,300"/>
+      <animate attributeName="opacity" values="0;1;0" dur="25s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="300" r="6" fill="#fff">
+      <animateMotion dur="18s" repeatCount="indefinite" 
+                     path="M0,0 Q200,200 400,400"/>
+      <animate attributeName="opacity" values="0;1;0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- MAIN LOGO (Animated entrance) -->
+  <g transform="translate(600, 250)">
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0s" dur="1.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale"
+                        from="0.5" to="1" begin="0s" dur="1.5s" fill="freeze"
+                        calcMode="spline" keySplines="0.34,1.56,0.64,1"/>
+      
+      <!-- Outer ring -->
+      <circle r="100" fill="none" stroke="url(#accentGrad)" stroke-width="5" filter="url(#heroGlow)">
+        <animate attributeName="stroke-dasharray" values="0,628;628,0" dur="3s" begin="1s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="rotate"
+                          from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite"/>
+      </circle>
+      
+      <!-- Inner hexagon -->
+      <polygon points="0,-70 61,-35 61,35 0,70 -61,35 -61,-35"
+               fill="url(#accentGrad)" stroke="#fff" stroke-width="3" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+      </polygon>
+      
+      <!-- Logo text -->
+      <text x="0" y="18" font-family="monospace" font-size="50" 
+            font-weight="bold" fill="#fff" text-anchor="middle">DF</text>
+      
+      <!-- Orbiting dots -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+                          from="0 0 0" to="-360 0 0" dur="8s" repeatCount="indefinite"/>
+        <circle cx="0" cy="-90" r="8" fill="#fff">
+          <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="90" r="8" fill="#fff">
+          <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+  </g>
+  
+  <!-- TITLE (Entrance animation) -->
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="80" 
+        font-weight="bold" text-anchor="middle" fill="#fff" filter="url(#heroGlow)" opacity="0">
+    DevFlow
+    <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="1s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate"
+                      from="0,50" to="0,0" begin="1.5s" dur="1s" fill="freeze"
+                      calcMode="spline" keySplines="0.34,1.56,0.64,1"/>
+  </text>
+  
+  <!-- TAGLINE -->
+  <text x="600" y="490" font-family="Arial, sans-serif" font-size="28" 
+        text-anchor="middle" fill="#e9d5ff" opacity="0">
+    The Complete Developer Platform
+    <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="1s" fill="freeze"/>
+  </text>
+  
+  <!-- FEATURES GRID (3 columns) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="1s" fill="freeze"/>
+    
+    <!-- Feature 1 -->
+    <g transform="translate(200, 600)">
+      <circle r="40" fill="rgba(255,255,255,0.1)" stroke="url(#accentGrad)" stroke-width="2">
+        <animate attributeName="r" values="40;44;40" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="12" font-size="36" text-anchor="middle">⚡</text>
+      <text x="0" y="80" font-family="Arial, sans-serif" font-size="20" 
+            font-weight="600" fill="#fff" text-anchor="middle">Lightning Deploy</text>
+    </g>
+    
+    <!-- Feature 2 -->
+    <g transform="translate(600, 600)">
+      <circle r="40" fill="rgba(255,255,255,0.1)" stroke="url(#accentGrad)" stroke-width="2">
+        <animate attributeName="r" values="40;44;40" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="12" font-size="36" text-anchor="middle">🔒</text>
+      <text x="0" y="80" font-family="Arial, sans-serif" font-size="20" 
+            font-weight="600" fill="#fff" text-anchor="middle">Enterprise Secure</text>
+    </g>
+    
+    <!-- Feature 3 -->
+    <g transform="translate(1000, 600)">
+      <circle r="40" fill="rgba(255,255,255,0.1)" stroke="url(#accentGrad)" stroke-width="2">
+        <animate attributeName="r" values="40;44;40" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="12" font-size="36" text-anchor="middle">🚀</text>
+      <text x="0" y="80" font-family="Arial, sans-serif" font-size="20" 
+            font-weight="600" fill="#fff" text-anchor="middle">AI Powered</text>
+    </g>
+  </g>
+  
+  <!-- STATS BAR (Bottom) -->
+  <g transform="translate(600, 730)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.5s" dur="1s" fill="freeze"/>
+    
+    <g transform="translate(-300, 0)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" 
+            font-weight="bold" fill="#fbbf24" text-anchor="middle">100K+</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" 
+            fill="#e9d5ff" text-anchor="middle">Developers</text>
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" 
+            font-weight="bold" fill="#fbbf24" text-anchor="middle">500M+</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" 
+            fill="#e9d5ff" text-anchor="middle">Deployments</text>
+    </g>
+    
+    <g transform="translate(300, 0)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" 
+            font-weight="bold" fill="#fbbf24" text-anchor="middle">99.99%</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" 
+            fill="#e9d5ff" text-anchor="middle">Uptime SLA</text>
+    </g>
+  </g>
+  
+  <!-- CTA BADGE (Top right corner) -->
+  <g transform="translate(1050, 80)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="5s" dur="0.5s" fill="freeze"/>
+    
+    <rect x="-80" y="-25" width="160" height="50" rx="25" fill="url(#goldGrad)" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" begin="5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="0" y="7" font-family="Arial, sans-serif" font-size="20" 
+          font-weight="bold" fill="#1e293b" text-anchor="middle">Start Free →</text>
+  </g>
+  
+  <!-- VERSION BADGE (Top left corner) -->
+  <g transform="translate(100, 80)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="5s" dur="0.5s" fill="freeze"/>
+    
+    <rect x="-50" y="-18" width="100" height="36" rx="18" 
+          fill="rgba(255,255,255,0.2)" stroke="url(#accentGrad)" stroke-width="2"/>
+    <text x="0" y="7" font-family="monospace" font-size="16" 
+          font-weight="bold" fill="#fff" text-anchor="middle">v3.0.0</text>
+  </g>
+  
+  <!-- SHINE EFFECT (Passes periodically) -->
+  <g clip-path="url(#shineClip)">
+    <rect x="-200" y="0" width="100" height="800" fill="url(#accentGrad)" opacity="0.3" transform="skewX(-20)">
+      <animate attributeName="x" values="-200;1400" dur="4s" begin="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.3;0" dur="4s" begin="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- PULSE RINGS (Around logo - continuous) -->
+  <g transform="translate(600, 250)">
+    <circle r="100" fill="none" stroke="#fff" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="100;180;260" dur="4s" begin="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0" dur="4s" begin="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="100" fill="none" stroke="#fff" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="100;180;260" dur="4s" begin="8.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0" dur="4s" begin="8.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="100" fill="none" stroke="#fff" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="100;180;260" dur="4s" begin="9.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0" dur="4s" begin="9.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
