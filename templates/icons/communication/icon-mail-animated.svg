@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24"
+     role="img"
+     aria-labelledby="mail-title">
+  
+  <title id="mail-title">Mail Icon</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <!-- Enveloppe -->
+  <rect x="3" y="5" width="18" height="14" rx="2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-dasharray="64"
+        stroke-dashoffset="64">
+    <animate attributeName="stroke-dashoffset" 
+             from="64" 
+             to="0" 
+             dur="0.8s" 
+             fill="freeze"/>
+  </rect>
+  
+  <!-- Rabat gauche -->
+  <polyline points="3,5 12,13"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="13"
+            stroke-dashoffset="13">
+    <animate attributeName="stroke-dashoffset" 
+             from="13" 
+             to="0" 
+             begin="0.8s"
+             dur="0.4s" 
+             fill="freeze"/>
+  </polyline>
+  
+  <!-- Rabat droite -->
+  <polyline points="21,5 12,13"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="13"
+            stroke-dashoffset="13">
+    <animate attributeName="stroke-dashoffset" 
+             from="13" 
+             to="0" 
+             begin="0.8s"
+             dur="0.4s" 
+             fill="freeze"/>
+  </polyline>
+  
+  <!-- Nouveau message indicator -->
+  <circle cx="18" cy="8" r="3" fill="currentColor" opacity="0">
+    <animate attributeName="opacity" 
+             values="0;1" 
+             begin="1.5s"
+             dur="0.3s" 
+             fill="freeze"/>
+    <animate attributeName="r" 
+             values="0;3" 
+             begin="1.5s"
+             dur="0.3s" 
+             fill="freeze"/>
+  </circle>
+  
+</svg>
