@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24"
+     role="img"
+     aria-labelledby="menu-title">
+  
+  <title id="menu-title">Menu Icon</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <!-- Ligne 1 -->
+  <line x1="3" y1="6" x2="21" y2="6"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="18"
+        stroke-dashoffset="18">
+    <animate attributeName="stroke-dashoffset" 
+             from="18" 
+             to="0" 
+             dur="0.4s" 
+             fill="freeze"/>
+  </line>
+  
+  <!-- Ligne 2 -->
+  <line x1="3" y1="12" x2="21" y2="12"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="18"
+        stroke-dashoffset="18">
+    <animate attributeName="stroke-dashoffset" 
+             from="18" 
+             to="0" 
+             begin="0.2s"
+             dur="0.4s" 
+             fill="freeze"/>
+  </line>
+  
+  <!-- Ligne 3 -->
+  <line x1="3" y1="18" x2="21" y2="18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="18"
+        stroke-dashoffset="18">
+    <animate attributeName="stroke-dashoffset" 
+             from="18" 
+             to="0" 
+             begin="0.4s"
+             dur="0.4s" 
+             fill="freeze"/>
+  </line>
+  
+  <!-- Pulse hover effect -->
+  <g opacity="0">
+    <animate attributeName="opacity" 
+             values="0;0.3;0" 
+             begin="1s"
+             dur="1s" 
+             repeatCount="indefinite"/>
+    
+    <rect x="2" y="5" width="20" height="2" rx="1" fill="currentColor"/>
+    <rect x="2" y="11" width="20" height="2" rx="1" fill="currentColor"/>
+    <rect x="2" y="17" width="20" height="2" rx="1" fill="currentColor"/>
+  </g>
+  
+</svg>
