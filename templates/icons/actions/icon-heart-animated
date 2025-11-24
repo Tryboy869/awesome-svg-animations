@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24"
+     role="img"
+     aria-labelledby="heart-title">
+  
+  <title id="heart-title">Heart Icon</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <!-- Coeur -->
+  <path d="M12,21 C12,21 3,15 3,9 C3,6 5,4 7.5,4 C9.5,4 11,5 12,6.5 C13,5 14.5,4 16.5,4 C19,4 21,6 21,9 C21,15 12,21 12,21 Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray="80"
+        stroke-dashoffset="80">
+    <animate attributeName="stroke-dashoffset" 
+             from="80" 
+             to="0" 
+             dur="1s" 
+             fill="freeze"/>
+  </path>
+  
+  <!-- Fill animé -->
+  <path d="M12,21 C12,21 3,15 3,9 C3,6 5,4 7.5,4 C9.5,4 11,5 12,6.5 C13,5 14.5,4 16.5,4 C19,4 21,6 21,9 C21,15 12,21 12,21 Z"
+        fill="currentColor"
+        opacity="0">
+    <animate attributeName="opacity" 
+             values="0;0.2" 
+             begin="1s"
+             dur="0.3s" 
+             fill="freeze"/>
+  </path>
+  
+  <!-- Battement -->
+  <g transform-origin="12 12">
+    <animateTransform attributeName="transform"
+                      type="scale"
+                      values="1;1.2;1;1.1;1"
+                      begin="1.3s"
+                      dur="0.6s"
+                      fill="freeze"/>
+    
+    <path d="M12,21 C12,21 3,15 3,9 C3,6 5,4 7.5,4 C9.5,4 11,5 12,6.5 C13,5 14.5,4 16.5,4 C19,4 21,6 21,9 C21,15 12,21 12,21 Z"
+          fill="currentColor"
+          opacity="0.3"/>
+  </g>
+  
+</svg>
