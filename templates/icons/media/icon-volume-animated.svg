@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="24" 
+     height="24" 
+     viewBox="0 0 24 24"
+     role="img"
+     aria-labelledby="volume-title">
+  
+  <title id="volume-title">Volume Icon</title>
+  
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  
+  <!-- Haut-parleur -->
+  <path d="M11,5 L6,9 L2,9 L2,15 L6,15 L11,19 Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"
+        stroke-dasharray="50"
+        stroke-dashoffset="50">
+    <animate attributeName="stroke-dashoffset" 
+             from="50" 
+             to="0" 
+             dur="0.8s" 
+             fill="freeze"/>
+    <animate attributeName="stroke-dashoffset" 
+             values="0;50;0" 
+             begin="3s"
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Onde 1 -->
+  <path d="M15,9 Q17,12 15,15"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="8"
+        stroke-dashoffset="8">
+    <animate attributeName="stroke-dashoffset" 
+             from="8" 
+             to="0" 
+             begin="0.8s"
+             dur="0.3s" 
+             fill="freeze"/>
+    <animate attributeName="opacity" 
+             values="1;0.5;1" 
+             begin="1.5s"
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Onde 2 -->
+  <path d="M18,7 Q21,12 18,17"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="12"
+        stroke-dashoffset="12">
+    <animate attributeName="stroke-dashoffset" 
+             from="12" 
+             to="0" 
+             begin="1.1s"
+             dur="0.3s" 
+             fill="freeze"/>
+    <animate attributeName="opacity" 
+             values="1;0.3;1" 
+             begin="1.5s"
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+</svg>
