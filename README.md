@@ -1,12 +1,13 @@
 # 🎬 SVG Animations - README Storytelling Templates
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](./ACCESSIBILITY.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/LICENSE#readme)
+[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/ACCESSIBILITY.md#readme)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/CONTRIBUTING.md#readme)
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme)
 
 > **Animated SVG templates that tell stories, not stats—accessible, performant, zero backend required.**
 
-[![Nexus Studio](./SVG-animations/nexus-studio-intro.svg)](https://github.com/Tryboy869/SVG-animations)
+[![Nexus Studio](https://github.com/Tryboy869/awesome-svg-animations/blob/main/SVG-animations/nexus-studio-intro.svg#readme)](https://github.com/Tryboy869/SVG-animations#readme)
 
 ---
 
@@ -40,6 +41,8 @@ GitHub README files are static. Videos are heavy (5-50 MB), require external hos
 
 ## 🎨 Template Categories
 
+<!--lint disable awesome-list-item-->
+
 ### **1. Cinematic README** (3 templates) 🔥 🆕
 
 **Revolutionary concept:** Full README as animated storytelling experience.
@@ -47,7 +50,7 @@ GitHub README files are static. Videos are heavy (5-50 MB), require external hos
 Replace your entire static README with a cinematic animation that tells your project's complete story in 30-60 seconds. Perfect for product launches, portfolio projects, and innovative showcases.
 
 #### **🎬 Version A: Cinematic (60s)**
-![Cinematic README](./templates/cinematic-readme/cinematic.svg)
+![Cinematic README](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/cinematic-readme/cinematic.svg#readme)
 *Complete storytelling: Logo drop → Title reveal → Problem → Solution → Features → Team → CTA*
 - **Duration:** 60 seconds (7 scenes)
 - **Size:** 1200x800px (ultra-visible)
@@ -55,7 +58,7 @@ Replace your entire static README with a cinematic animation that tells your pro
 - **Scenes:** Brand intro, problem statement, solution showcase, feature highlights, team card, call-to-action
 
 #### **⚡ Version B: Express (30s)**
-![Express README](./templates/cinematic-readme/express.svg)
+![Express README](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/cinematic-readme/express.svg#readme)
 *Fast-paced pitch: Brand → Value prop → How it works → CTA*
 - **Duration:** 30 seconds (4 scenes)
 - **Size:** 1200x800px
@@ -63,7 +66,7 @@ Replace your entire static README with a cinematic animation that tells your pro
 - **Scenes:** Quick brand intro, 3 key features, 3-step process, immediate CTA
 
 #### **🎨 Version C: Hero (Permanent)**
-![Hero README](./templates/cinematic-readme/hero.svg)
+![Hero README](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/cinematic-readme/hero.svg#readme)
 *Single impactful poster with continuous subtle animations*
 - **Duration:** Permanent (infinite loop with subtle effects)
 - **Size:** 1200x800px
@@ -89,19 +92,19 @@ Replace your entire static README with a cinematic animation that tells your pro
 Visualize your development process:
 
 #### **Deployment Pipeline**
-![Deployment Pipeline](./templates/workflow/deployment-pipeline.svg)
+![Deployment Pipeline](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/workflow/deployment-pipeline.svg#readme)
 
 #### **CI/CD Flow**
-![CI/CD Flow](./templates/workflow/ci-cd-flow.svg)
+![CI/CD Flow](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/workflow/ci-cd-flow.svg#readme)
 
 #### **Contribution Flow**
-![Contribution Flow](./templates/workflow/contribution-flow.svg)
+![Contribution Flow](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/workflow/contribution-flow.svg#readme)
 
 #### **Architecture Diagram**
-![Architecture](./templates/workflow/architecture-diagram.svg)
+![Architecture](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/workflow/architecture-diagram.svg#readme)
 
 #### **API Integration**
-![API Integration](./templates/workflow/api-integration.svg)
+![API Integration](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/workflow/api-integration.svg#readme)
 
 ---
 
@@ -110,19 +113,19 @@ Visualize your development process:
 Tell your project's story:
 
 #### **Project Timeline**
-![Timeline](./templates/storytelling/project-timeline.svg)
+![Timeline](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/storytelling/project-timeline.svg#readme)
 
 #### **Feature Roadmap**
-![Roadmap](./templates/storytelling/feature-roadmap.svg)
+![Roadmap](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/storytelling/feature-roadmap.svg#readme)
 
 #### **Tech Stack**
-![Tech Stack](./templates/storytelling/tech-stack.svg)
+![Tech Stack](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/storytelling/tech-stack.svg#readme)
 
 #### **Team Showcase**
-![Team](./templates/storytelling/team-showcase.svg)
+![Team](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/storytelling/team-showcase.svg#readme)
 
 #### **Impact Metrics**
-![Metrics](./templates/storytelling/impact-metrics.svg)
+![Metrics](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/storytelling/impact-metrics.svg#readme)
 
 ---
 
@@ -131,19 +134,19 @@ Tell your project's story:
 Showcase your skills:
 
 #### **Skills Progression**
-![Skills](./templates/branding/skills-progression.svg)
+![Skills](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/branding/skills-progression.svg#readme)
 
 #### **Project Highlights**
-![Projects](./templates/branding/project-highlights.svg)
+![Projects](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/branding/project-highlights.svg#readme)
 
 #### **Contribution Journey**
-![Journey](./templates/branding/contribution-journey.svg)
+![Journey](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/branding/contribution-journey.svg#readme)
 
 #### **Learning Path**
-![Learning](./templates/branding/learning-path.svg)
+![Learning](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/branding/learning-path.svg#readme)
 
 #### **Contact Card**
-![Contact](./templates/branding/contact-card.svg)
+![Contact](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/branding/contact-card.svg#readme)
 
 ---
 
@@ -152,27 +155,27 @@ Showcase your skills:
 Generic professional logos for any brand:
 
 #### **Tech Startup Logo**
-![Tech Startup](./templates/logos/tech-startup-logo.svg)
+![Tech Startup](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/tech-startup-logo.svg#readme)
 *Modern hexagonal design with rotating elements - Perfect for tech companies*
 
 #### **Creative Agency Logo**
-![Creative Agency](./templates/logos/creative-agency-logo.svg)
+![Creative Agency](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/creative-agency-logo.svg#readme)
 *Colorful constellation with connecting particles - Ideal for creative studios*
 
 #### **SaaS Company Logo**
-![SaaS Company](./templates/logos/saas-company-logo.svg)
+![SaaS Company](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/saas-company-logo.svg#readme)
 *Professional layered design with data flow - Great for software businesses*
 
 #### **Design Studio Logo**
-![Design Studio](./templates/logos/design-studio-logo.svg)
+![Design Studio](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/design-studio-logo.svg#readme)
 *Organic morphing shapes with vibrant colors - Perfect for artistic brands*
 
 #### **Mobile App Logo**
-![Mobile App](./templates/logos/mobile-app-logo.svg)
+![Mobile App](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/mobile-app-logo.svg#readme)
 *App icon style with bounce effect and notification badge - Mobile-first design*
 
 #### **Awesome Logo** 🔥
-![Awesome](./templates/logos/awesome-logo.svg)
+![Awesome](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/logos/awesome-logo.svg#readme)
 *Cool sunglasses logo with progressive reveal and multicolor shine - For awesome projects!*
 
 ---
@@ -182,34 +185,30 @@ Generic professional logos for any brand:
 Professional GitHub README badges with subtle animations:
 
 #### **Status Badges**
-![Build Passing](./templates/badges/status/build-passing.svg)
-![Tests Success](./templates/badges/status/tests-success.svg)
-![Coverage 95%](./templates/badges/status/coverage-badge.svg)
-![Deploy Success](./templates/badges/status/deploy-success.svg)
-![Maintained Yes](./templates/badges/status/maintained-yes.svg)
+![Maintained Yes](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/status/maintained-yes.svg#readme)
 
 #### **Metrics Badges**
-![Stars 1.2k](./templates/badges/metrics/stars-counter.svg)
-![Forks 456](./templates/badges/metrics/forks-badge.svg)
-![Contributors 42](./templates/badges/metrics/contributors-badge.svg)
-![Downloads 10k/mo](./templates/badges/metrics/downloads-badge.svg)
-![Issues 3 Open](./templates/badges/metrics/issues-open.svg)
+![Stars 1.2k](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/metrics/stars-counter.svg#readme)
+![Forks 456](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/metrics/forks-badge.svg#readme)
+![Contributors 42](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/metrics/contributors-badge.svg#readme)
+![Downloads 10k/mo](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/metrics/downloads-badge.svg#readme)
+![Issues 3 Open](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/metrics/issues-open.svg#readme)
 
 #### **Tech Stack Badges**
-![JavaScript](./templates/badges/tech/javascript-badge.svg)
-![Python](./templates/badges/tech/python-badge.svg)
-![React](./templates/badges/tech/react-badge.svg)
-![Node.js](./templates/badges/tech/nodejs-badge.svg)
-![TypeScript](./templates/badges/tech/typescript-badge.svg)
+![JavaScript](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/tech/javascript-badge.svg#readme)
+![Python](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/tech/python-badge.svg#readme)
+![React](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/tech/react-badge.svg#readme)
+![Node.js](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/tech/nodejs-badge.svg#readme)
+![TypeScript](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/tech/typescript-badge.svg#readme)
 
 #### **Social Badges**
-![Twitter Follow](./templates/badges/social/twitter-badge.svg)
-![Discord Chat](./templates/badges/social/discord-badge.svg)
-![Email Contact](./templates/badges/social/email-badge.svg)
+![Twitter Follow](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/social/twitter-badge.svg#readme)
+![Discord Chat](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/social/discord-badge.svg#readme)
+![Email Contact](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/social/email-badge.svg#readme)
 
 #### **Custom Templates**
-![Custom Text](./templates/badges/custom/custom-text-badge.svg)
-![Custom Metric](./templates/badges/custom/custom-metric-badge.svg)
+![Custom Text](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/custom/custom-text-badge.svg#readme)
+![Custom Metric](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/badges/custom/custom-metric-badge.svg#readme)
 *Fully customizable badge templates - edit text, colors, and animations!*
 
 ---
@@ -221,49 +220,49 @@ Professional GitHub README badges with subtle animations:
 Lightweight (1-3 KB each), accessible, infinitely scalable, with continuous loop animations. Perfect for UI, README files, and web projects.
 
 #### **🧭 Navigation & Interface** (3 icons)
-![Home](./templates/icons/navigation/icon-home-animated.svg)
-![Search](./templates/icons/navigation/icon-search-animated.svg)
-![Menu](./templates/icons/navigation/icon-menu-animated.svg)
+![Home](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/navigation/icon-home-animated.svg#readme)
+![Search](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/navigation/icon-search-animated.svg#readme)
+![Menu](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/navigation/icon-menu-animated.svg#readme)
 
 #### **⚡ Actions** (3 icons)
-![Plus](./templates/icons/actions/icon-plus-animated.svg)
-![Check](./templates/icons/actions/icon-check-animated.svg)
-![Heart](./templates/icons/actions/icon-heart-animated.svg)
+![Plus](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/actions/icon-plus-animated.svg#readme)
+![Check](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/actions/icon-check-animated.svg#readme)
+![Heart](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/actions/icon-heart-animated.svg#readme)
 
 #### **💬 Communication** (2 icons)
-![Bell](./templates/icons/communication/icon-bell-animated.svg)
-![Mail](./templates/icons/communication/icon-mail-animated.svg)
+![Bell](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/communication/icon-bell-animated.svg#readme)
+![Mail](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/communication/icon-mail-animated.svg#readme)
 
 #### **📁 Files & Documents** (2 icons)
-![Download](./templates/icons/files/icon-download-animated.svg)
-![Upload](./templates/icons/files/icon-upload-animated.svg)
+![Download](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/files/icon-download-animated.svg#readme)
+![Upload](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/files/icon-upload-animated.svg#readme)
 
 #### **🌟 Social** (2 icons)
-![Star](./templates/icons/social/icon-star-animated.svg)
-![Share](./templates/icons/social/icon-share-animated.svg)
+![Star](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/social/icon-star-animated.svg#readme)
+![Share](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/social/icon-share-animated.svg#readme)
 
 #### **📺 Media** (4 icons)
-![Play](./templates/icons/media/icon-play-animated.svg)
-![Pause](./templates/icons/media/icon-pause-animated.svg)
-![Volume](./templates/icons/media/icon-volume-animated.svg)
-![Camera](./templates/icons/media/icon-camera-animated.svg)
+![Play](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/media/icon-play-animated.svg#readme)
+![Pause](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/media/icon-pause-animated.svg#readme)
+![Volume](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/media/icon-volume-animated.svg#readme)
+![Camera](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/media/icon-camera-animated.svg#readme)
 
 #### **⚙️ Settings** (4 icons)
-![Settings](./templates/icons/settings/icon-settings-animated.svg)
-![Sliders](./templates/icons/settings/icon-sliders-animated.svg)
-![Lock](./templates/icons/settings/icon-lock-animated.svg)
-![User](./templates/icons/settings/icon-user-animated.svg)
+![Settings](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/settings/icon-settings-animated.svg#readme)
+![Sliders](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/settings/icon-sliders-animated.svg#readme)
+![Lock](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/settings/icon-lock-animated.svg#readme)
+![User](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/settings/icon-user-animated.svg#readme)
 
 #### **📊 Data** (3 icons)
-![Chart](./templates/icons/data/icon-chart-animated.svg)
-![Database](./templates/icons/data/icon-database-animated.svg)
-![Code](./templates/icons/data/icon-code-animated.svg)
+![Chart](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/data/icon-chart-animated.svg#readme)
+![Database](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/data/icon-database-animated.svg#readme)
+![Code](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/data/icon-code-animated.svg#readme)
 
 #### **🛒 Shopping** (4 icons)
-![Cart](./templates/icons/shopping/icon-cart-animated.svg)
-![Tag](./templates/icons/shopping/icon-tag-animated.svg)
-![Credit Card](./templates/icons/shopping/icon-credit-card-animated.svg)
-![Package](./templates/icons/shopping/icon-package-animated.svg)
+![Cart](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/shopping/icon-cart-animated.svg#readme)
+![Tag](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/shopping/icon-tag-animated.svg#readme)
+![Credit Card](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/shopping/icon-credit-card-animated.svg#readme)
+![Package](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/shopping/icon-package-animated.svg#readme)
 
 **Icon Features:**
 - ✅ **Ultra-light:** 1-3 KB each (50-200x lighter than Lottie)
@@ -284,7 +283,7 @@ Lightweight (1-3 KB each), accessible, infinitely scalable, with continuous loop
 </div>
 ```
 
-[See full icon documentation →](./templates/icons/README.md)
+[See full icon documentation →](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/README.md#readme)
 
 ---
 
@@ -292,7 +291,7 @@ Lightweight (1-3 KB each), accessible, infinitely scalable, with continuous loop
 
 ### **1. Choose a Template**
 
-Browse [`templates/`](./templates/) and pick one:
+Browse [`templates/`](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/#readme) and pick one:
 - `cinematic-readme/` - Full README animations (30-60s stories) 🔥 🆕
 - `workflow/` - Development processes
 - `storytelling/` - Project narratives
@@ -312,7 +311,6 @@ cp SVG-animations/templates/cinematic-readme/cinematic.svg ./
 
 # Or copy specific elements
 cp SVG-animations/templates/logos/awesome-logo.svg ./assets/
-cp SVG-animations/templates/badges/status/build-passing.svg ./assets/
 cp SVG-animations/templates/icons/navigation/icon-home-animated.svg ./assets/icons/
 ```
 
@@ -322,7 +320,7 @@ cp SVG-animations/templates/icons/navigation/icon-home-animated.svg ./assets/ico
 ```markdown
 # My Project
 
-![Project Introduction](./cinematic.svg)
+![Project Introduction](https://github.com/Tryboy869/awesome-svg-animations/blob/main/cinematic.svg#readme)
 
 <!-- That's it! Your entire README is now an animated story -->
 ```
@@ -331,19 +329,16 @@ cp SVG-animations/templates/icons/navigation/icon-home-animated.svg ./assets/ico
 ```markdown
 ## Our Brand
 
-![Logo](./assets/awesome-logo.svg)
+![Logo](https://github.com/Tryboy869/awesome-svg-animations/blob/main/assets/awesome-logo.svg#readme)
 
 ## Status
 
-![Build](./assets/build-passing.svg)
-![Tests](./assets/tests-success.svg)
-![Coverage](./assets/coverage-badge.svg)
 
 ## Navigation
 
-![Home](./assets/icons/icon-home-animated.svg)
-![Search](./assets/icons/icon-search-animated.svg)
-![Menu](./assets/icons/icon-menu-animated.svg)
+![Home](https://github.com/Tryboy869/awesome-svg-animations/blob/main/assets/icons/icon-home-animated.svg#readme)
+![Search](https://github.com/Tryboy869/awesome-svg-animations/blob/main/assets/icons/icon-search-animated.svg#readme)
+![Menu](https://github.com/Tryboy869/awesome-svg-animations/blob/main/assets/icons/icon-menu-animated.svg#readme)
 ```
 
 ### **4. Customize (Optional)**
@@ -411,7 +406,7 @@ Edit SVG in any text editor:
 - VoiceOver/NVDA: ✅ Announces properly
 - Colorblind simulation: ✅ All types supported
 
-[Read full accessibility docs →](./ACCESSIBILITY.md)
+[Read full accessibility docs →](https://github.com/Tryboy869/awesome-svg-animations/blob/main/ACCESSIBILITY.md#readme)
 
 ---
 
@@ -510,6 +505,8 @@ For users who prefer reduced motion, animations automatically stop. Test:
 
 ## 📚 Use Cases
 
+<!--lint disable awesome-list-item-->
+
 ### **Cinematic README** 🆕 🔥
 - **Product Launches:** Replace static README with 60s animated story
 - **Portfolio Projects:** Stand out with cinematic introduction
@@ -561,6 +558,8 @@ For users who prefer reduced motion, animations automatically stop. Test:
 ---
 
 ## 🎨 Cinematic README Tips
+<!--lint enable awesome-list-item-->
+
 
 ### **Choosing the Right Version**
 
@@ -596,8 +595,10 @@ For users who prefer reduced motion, animations automatically stop. Test:
 ---
 
 ## 🤝 Contributing
+<!--lint enable awesome-list-item-->
 
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+We welcome contributions! See [CONTRIBUTING.md](https://github.com/Tryboy869/awesome-svg-animations/blob/main/CONTRIBUTING.md#readme)
 
 **Ideas for new templates:**
 - Data visualization (charts, graphs)
@@ -620,11 +621,11 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 📖 Documentation
 
-- [**Accessibility Guide**](./ACCESSIBILITY.md) - WCAG compliance details
-- [**Contributing Guide**](./CONTRIBUTING.md) - How to submit templates
-- [**Code of Conduct**](./CODE_OF_CONDUCT.md) - Community guidelines
-- [**Cinematic README Guide**](./templates/cinematic-readme/README.md) - Detailed customization 🆕
-- [**Icons Guide**](./templates/icons/README.md) - Icon library documentation 🆕
+- [**Accessibility Guide**](https://github.com/Tryboy869/awesome-svg-animations/blob/main/ACCESSIBILITY.md#readme) - WCAG compliance details
+- [**Contributing Guide**](https://github.com/Tryboy869/awesome-svg-animations/blob/main/CONTRIBUTING.md#readme) - How to submit templates
+- [**Code of Conduct**](https://github.com/Tryboy869/awesome-svg-animations/blob/main/CODE_OF_CONDUCT.md#readme) - Community guidelines
+- [**Cinematic README Guide**](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/cinematic-readme/README.md#readme) - Detailed customization 🆕
+- [**Icons Guide**](https://github.com/Tryboy869/awesome-svg-animations/blob/main/templates/icons/README.md#readme) - Icon library documentation 🆕
 
 ---
 
@@ -682,7 +683,7 @@ This project challenges the status quo:
 - **CEO:** Daouda Abdoul Anzize
 - **Contact:** nexusstudio100@gmail.com
 - **Personal:** anzizdaouda0@gmail.com
-- **GitHub:** [@Tryboy869](https://github.com/Tryboy869)
+- **GitHub:** [@Tryboy869](https://github.com/Tryboy869#readme)
 
 **Mission:** Building tomorrow's technology, today.
 
@@ -696,7 +697,7 @@ This project challenges the status quo:
 
 MIT License - Feel free to use these animations in your projects!
 
-See [LICENSE](./LICENSE) for details.
+See [LICENSE](https://github.com/Tryboy869/awesome-svg-animations/blob/main/LICENSE#readme) for details.
 
 ---
 
@@ -716,10 +717,10 @@ It helps others discover accessible, performant animations for GitHub README fil
 
 **Questions? Feedback? Collaboration?**
 
-- **Email:** nexusstudio100@gmail.com
-- **Personal:** anzizdaouda0@gmail.com
-- **GitHub Issues:** [Open an issue](https://github.com/Tryboy869/SVG-animations/issues)
-- **Discussions:** [Start a discussion](https://github.com/Tryboy869/SVG-animations/discussions)
+- **Email:** [See contact section](#-contact)
+- **Personal:** [See contact section](#-contact)
+- **GitHub Issues:** [Open an issue](https://github.com/Tryboy869/SVG-animations/issues#readme)
+- **Discussions:** [Start a discussion](https://github.com/Tryboy869/SVG-animations/discussions#readme)
 
 **Showcase your implementations:**
 - Submit a PR to add your project to our showcase gallery!
@@ -729,7 +730,7 @@ It helps others discover accessible, performant animations for GitHub README fil
 
 <div align="center">
 
-**Made with ❤️ by [Nexus Studio](https://github.com/Tryboy869)**
+**Made with ❤️ by [Nexus Studio](https://github.com/Tryboy869#readme)**
 
 *Animated storytelling for the modern web*
 
