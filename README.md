@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/LICENSE#readme)
 [![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-green.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/ACCESSIBILITY.md#readme)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tryboy869/awesome-svg-animations/blob/main/CONTRIBUTING.md#readme)
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme)
 
 > **Animated SVG templates that tell stories, not stats—accessible, performant, zero backend required.**
 
